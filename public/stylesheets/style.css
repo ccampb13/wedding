@@ -1,0 +1,65 @@
+footer p {
+  text-align: center;
+}
+header {
+  text-align: center;
+  width: 100%;
+  min-height: 60px;
+  margin: 0px;
+}
+header ul.nav-bar {
+  width: 100%;
+  margin: 0px auto;
+  padding: 20px;
+  position: fixed;
+  background-color: #fff;
+}
+header ul.nav-bar li {
+  display: inline-block;
+  margin: 0px 40px;
+}
+header ul.nav-bar li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+section.introduction article.opening-statement div {
+  text-align: center;
+}
+section.introduction article.opening-statement div p {
+  margin: 10px auto;
+  padding: 20px auto;
+}
+section.registry article.where-to-buy {
+  text-align: center;
+}
+section.registry article.where-to-buy ul.register-links {
+  padding: 0px;
+}
+section.registry article.where-to-buy ul.register-links li {
+  display: inline-block;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00b7ff;
+}
+h1 {
+  text-align: center;
+}
+section {
+  min-height: 100vh;
+  padding-top: 150px;
+}
+section.main-image {
+  padding-top: 200px;
+  width: 100%;
+  background-color: #313131;
+}
+section.main-image h1 {
+  color: #fff;
+}

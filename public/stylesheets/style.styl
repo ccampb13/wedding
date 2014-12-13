@@ -1,0 +1,31 @@
+// Base Styles
+@import 'base/colors'
+@import 'base/typography'
+
+// Components
+@import 'components/*'
+
+// Views
+@import 'views/*'
+
+body
+  padding: 0px
+  margin: 0px
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+a
+  color: #00B7FF
+
+h1
+  text-align: center
+
+section
+  min-height: 100vh
+  padding-top: 150px
+
+  &.main-image
+    padding-top: 200px
+    width: 100%
+    background-color: $grey-darker
+
+    h1
+      color: white
