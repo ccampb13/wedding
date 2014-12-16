@@ -1,3 +1,24 @@
+.button {
+  display: inline-block;
+  padding: 10px 32px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  background-color: #8f8f8f;
+  border: 1px solid #8f8f8f;
+}
+.button:hover {
+  color: #fff;
+  background-color: #313131;
+  border: 1px solid #313131;
+}
 footer p {
   text-align: center;
 }
@@ -24,12 +45,23 @@ header ul.nav-bar li a {
   color: #000;
   text-transform: uppercase;
 }
+section.introduction article.opening-statement {
+  margin: 20px auto;
+}
 section.introduction article.opening-statement div {
   text-align: center;
 }
 section.introduction article.opening-statement div p {
   margin: 10px auto;
   padding: 20px auto;
+}
+section.nashville {
+  padding-top: 200px;
+  width: 100%;
+  background-color: #313131;
+}
+section.nashville h1 {
+  color: #fff;
 }
 section.registry article.where-to-buy {
   text-align: center;
@@ -40,20 +72,46 @@ section.registry article.where-to-buy ul.register-links {
 section.registry article.where-to-buy ul.register-links li {
   display: inline-block;
 }
+section.travel {
+  text-align: center;
+}
+section.travel article {
+  display: inline-block;
+  height: 270px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #e60000;
+}
+section.travel article p {
+  text-transform: uppercase;
+  display: block;
+  font-size: 30px;
+}
+section.travel article a.button {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+section.travel h6 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 25px auto 5px;
+}
 body {
   padding: 0px;
   margin: 0px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 a {
   color: #00b7ff;
 }
 h1 {
   text-align: center;
+  font-size: 50px;
+  letter-spacing: 2.5px;
 }
 section {
   min-height: 100vh;
-  padding-top: 150px;
+  padding-top: 50px;
 }
 section.main-image {
   padding-top: 200px;
