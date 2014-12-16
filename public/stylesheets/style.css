@@ -63,14 +63,30 @@ section.nashville {
 section.nashville h1 {
   color: #fff;
 }
-section.registry article.where-to-buy {
+section.registry {
   text-align: center;
 }
+section.registry article.where-to-buy {
+  margin: 5px auto;
+  width: 60%;
+  padding: 20px;
+}
+section.registry article.where-to-buy p {
+  font-size: 30px;
+  color: #8f8f8f;
+}
 section.registry article.where-to-buy ul.register-links {
-  padding: 0px;
+  padding: 20px;
+  margin: 20px auto;
 }
 section.registry article.where-to-buy ul.register-links li {
   display: inline-block;
+}
+section.registry article.where-to-buy ul.register-links li a {
+  margin: 20px;
+  font-size: 50px;
+  color: #313131;
+  text-decoration: none;
 }
 section.travel {
   text-align: center;
@@ -79,9 +95,11 @@ section.travel article {
   display: inline-block;
   height: 270px;
   margin: 20px;
-  padding: 20px;
   text-align: center;
-  border: 1px solid #e60000;
+}
+section.travel article figure.icon img {
+  width: 100px;
+  height: 100px;
 }
 section.travel article p {
   text-transform: uppercase;
@@ -95,7 +113,7 @@ section.travel article a.button {
 section.travel h6 {
   text-transform: uppercase;
   font-size: 30px;
-  margin: 25px auto 5px;
+  margin: 5px;
 }
 body {
   padding: 0px;
@@ -108,6 +126,8 @@ h1 {
   text-align: center;
   font-size: 50px;
   letter-spacing: 2.5px;
+  font-weight: normal;
+  color: #313131;
 }
 section {
   min-height: 100vh;
