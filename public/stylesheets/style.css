@@ -1,3 +1,70 @@
+@font-face {
+  font-family: 'JosefinSlab-Regular';
+  src: url("../fonts/JosefinSlab-Regular.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+.defaultType,
+body,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small,
+em,
+strong,
+input,
+button {
+  font-family: "JosefinSlab-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  margin: 1em 0;
+  color: #313131;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+h1 {
+  font-size: 54px;
+  line-height: 70px;
+}
+h2 {
+  font-size: 45px;
+  line-height: 64px;
+}
+h3 {
+  font-size: 35px;
+  line-height: 45px;
+}
+h4 {
+  font-size: 26px;
+  line-height: 40px;
+}
+h5 {
+  font-size: 21px;
+  line-height: 27px;
+}
+h6 {
+  font-size: 19px;
+  line-height: 33px;
+}
+p {
+  line-height: 26px;
+  font-size: 24px;
+}
 .button {
   display: inline-block;
   padding: 10px 32px;
@@ -45,8 +112,12 @@ header ul.nav-bar li a {
   color: #000;
   text-transform: uppercase;
 }
+section.introduction {
+  text-align: center;
+}
 section.introduction article.opening-statement {
-  margin: 20px auto;
+  width: 50%;
+  margin: 0px auto;
 }
 section.introduction article.opening-statement div {
   text-align: center;
@@ -55,10 +126,14 @@ section.introduction article.opening-statement div p {
   margin: 10px auto;
   padding: 20px auto;
 }
+section.introduction figure img.eastend {
+  margin: 50px auto;
+}
 section.nashville {
   padding-top: 200px;
   width: 100%;
-  background-color: #313131;
+  background-color: rgba(0,0,0,0.85);
+  background-image: url("../images/nashville.jpg");
 }
 section.nashville h1 {
   color: #fff;
@@ -115,29 +190,45 @@ section.travel h6 {
   font-size: 30px;
   margin: 5px;
 }
-body {
+.icon.animated.over-scale {
+  width: 125px;
+  height: 125px;
+  background-color: #313131;
+  border-radius: 50%;
+}
+.icon.animated.over-scale .path-1 {
+  fill: #fff;
+}
+body,
+html,
+main {
   padding: 0px;
   margin: 0px;
 }
+height: 100%,
 a {
   color: #00b7ff;
 }
-h1 {
-  text-align: center;
-  font-size: 50px;
-  letter-spacing: 2.5px;
-  font-weight: normal;
-  color: #313131;
-}
 section {
-  min-height: 100vh;
-  padding-top: 50px;
+  border-bottom: 2px solid rgba(143,143,143,0.9);
+  box-shadow: 0 0 5px;
+  padding-top: 100px;
 }
 section.main-image {
   padding-top: 200px;
   width: 100%;
-  background-color: #313131;
+  background-image: url("../images/christmas-pic.jpg");
 }
 section.main-image h1 {
   color: #fff;
+}
+section.cd-fixed-bg {
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section.cd-scrolling-bg {
+  min-height: 100vh;
 }

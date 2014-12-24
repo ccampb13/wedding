@@ -1,0 +1,56 @@
+// Font declarations
+@font-face
+  font-family: 'JosefinSlab-Regular'
+  src url("../fonts/JosefinSlab-Regular.ttf") format('truetype') // Safari, Android, iOS
+  font-style: normal
+  font-weight: normal
+
+
+$type-defaults = "Helvetica Neue", "Helvetica", "Arial", sans-serif
+$type-regular  = "JosefinSlab-Regular", $type-defaults
+
+.defaultType
+  font-family: $type-regular
+  font-weight: normal
+  font-style: normal
+  -webkit-font-smoothing antialiased
+
+body, p, a, h1, h2, h3, h4, h5, h6,
+small, em, strong, input, button
+  @extends .defaultType
+
+// Headings
+// –––––––––––––––––––––––––––––––––––––––––––
+h1, h2, h3, h4, h5, h6
+  display: block
+  margin: 1em 0
+  color: $grey-darker
+  font-weight: normal
+  text-align: center
+  letter-spacing: 2.5px
+
+
+// Default heading styles
+h1
+  font-size: 54px
+  line-height: 70px
+h2
+  font-size: 45px
+  line-height: 64px
+h3
+  font-size: 35px
+  line-height: 45px
+h4
+  font-size: 26px
+  line-height: 40px
+h5
+  font-size: 21px
+  line-height: 27px
+h6
+  font-size: 19px
+  line-height: 33px
+
+// Default paragraph styles
+p
+  line-height: 26px
+  font-size: 24px
