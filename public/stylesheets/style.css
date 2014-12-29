@@ -4,6 +4,12 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: 'BodoniFLF-Roman';
+  src: url("../fonts/BodoniFLF-Roman.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
 .defaultType,
 body,
 p,
@@ -19,7 +25,7 @@ em,
 strong,
 input,
 button {
-  font-family: "JosefinSlab-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "BodoniFLF-Roman", "JosefinSlab-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -33,9 +39,7 @@ h6 {
   display: block;
   margin: 1em 0;
   color: #313131;
-  font-weight: normal;
   text-align: center;
-  letter-spacing: 2.5px;
 }
 h1 {
   font-size: 54px;
