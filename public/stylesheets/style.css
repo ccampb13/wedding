@@ -244,6 +244,7 @@ section.main-image {
   padding-top: 200px;
   width: 100%;
   background-image: url("../images/christmas-pic.jpg");
+  background-size: fixed;
 }
 section.main-image h1 {
   color: #fff;
