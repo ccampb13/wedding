@@ -10,6 +10,12 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: 'Sudestada';
+  src: url("../fonts/Sudestada.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
 .defaultType,
 body,
 p,
@@ -92,7 +98,21 @@ p {
   background-color: #313131;
   border: 1px solid #313131;
 }
-footer p {
+footer {
+  text-align: center;
+}
+footer #mc_embed_signup {
+  margin: 20px auto;
+  font-size: 20px;
+}
+footer .subscribe {
+  margin-right: 10px;
+}
+footer .email {
+  margin-right: 10px;
+  width: 175px;
+  height: 30px;
+  font-size: 20px;
   text-align: center;
 }
 header {
@@ -245,6 +265,7 @@ section.main-image {
   padding-top: 200px;
   width: 100%;
   background-image: url("../images/summer.jpg");
+  background-size: fixed;
 }
 section.main-image h1 {
   color: #fff;
