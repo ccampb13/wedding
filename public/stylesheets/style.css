@@ -39,7 +39,9 @@ h6 {
   display: block;
   margin: 1em 0;
   color: #313131;
+  font-weight: normal;
   text-align: center;
+  letter-spacing: 2.5px;
 }
 h1 {
   font-size: 54px;
@@ -107,6 +109,7 @@ header ul.nav-bar {
   background-color: #fff;
 }
 header ul.nav-bar li {
+  float: right;
   display: inline-block;
   margin: 0px 40px;
 }
@@ -120,7 +123,7 @@ section.introduction {
   text-align: center;
 }
 section.introduction article.opening-statement {
-  width: 50%;
+  width: 60%;
   margin: 0px auto;
 }
 section.introduction article.opening-statement div {
@@ -130,8 +133,28 @@ section.introduction article.opening-statement div p {
   margin: 10px auto;
   padding: 20px auto;
 }
-section.introduction figure img.eastend {
-  margin: 50px auto;
+section.introduction article.profiles {
+  margin-top: 50px;
+  width: 100%;
+  display: inline-block;
+}
+section.introduction article.profiles figure {
+  display: inline-block;
+  width: 20%;
+  height: 400px;
+  margin: 10px 20px;
+  overflow: hidden;
+}
+section.introduction article.profiles figure img.profile {
+  height: 200px;
+  width: 300px;
+}
+section.introduction article.profiles figure h5 {
+  display: inline-block;
+  margin: 5px auto;
+}
+section.introduction article.profiles figure p {
+  font-size: 14px;
 }
 section.nashville {
   padding-top: 200px;
@@ -221,7 +244,7 @@ section {
 section.main-image {
   padding-top: 200px;
   width: 100%;
-  background-image: url("../images/christmas-pic.jpg");
+  background-image: url("../images/summer.jpg");
 }
 section.main-image h1 {
   color: #fff;
