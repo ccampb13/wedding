@@ -1,0 +1,46 @@
+
+//
+// Global styles and fun stuff
+// –––––––––––––––––––––––––––––––––––––––––––
+
+
+// Variables
+$maxSiteWidth = 1140px
+$desktopWidth = 940px
+$tabletWidth  = 720px
+$mobileWidth  = 100%
+
+
+// This is our repsonive scale, based on
+// default Bootstrap breakboints.
+//
+// Reference: http://jenius.github.io/rupture/
+//
+scale = 0px 768px 992px 1200px
+mobile-cutoff   = 768px
+tablet-cutoff   = 992px
+desktop-cutoff  = 1200px
+
+//
+// Global layout
+// –––––––––––––––––––––
+
+.main section
+  position: relative
+  padding: 70px 0
+
+.center
+  position: relative
+  clear: both
+  center(maxWidth = $maxSiteWidth)
+
+  +below(3)
+    width: $desktopWidth
+    border: 3px solid green
+
+  +below(2)
+    width: $tabletWidth
+
+  +below(1)
+    width: $mobileWidth
+    padding: 0 10px

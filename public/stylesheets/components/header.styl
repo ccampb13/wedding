@@ -1,6 +1,6 @@
 header
   text-align: center
-  width: 100%
+  // width: 100%
   min-height: 60px
   margin: 0px
 
@@ -9,7 +9,7 @@ header
     margin: 0px auto
     padding: 20px
     position: fixed
-    background-color: white
+    background-color: rgba(white, 0.7)
 
     li
       float right
@@ -21,3 +21,11 @@ header
         text-decoration: none
         color: black
         text-transform: uppercase
+
+
+  +below(3)
+    header#top
+      ul.nav-bar
+        li
+          a
+            border: 3px solid yellow

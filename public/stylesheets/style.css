@@ -77,6 +77,17 @@ p {
   line-height: 26px;
   font-size: 24px;
 }
+.main section {
+  position: relative;
+  padding: 70px 0;
+}
+.center {
+  position: relative;
+  clear: both;
+below(3)
+below(2)
+below(1)
+}
 .button {
   display: inline-block;
   padding: 10px 32px;
@@ -117,16 +128,16 @@ footer .email {
 }
 header {
   text-align: center;
-  width: 100%;
   min-height: 60px;
   margin: 0px;
+below(3)
 }
 header ul.nav-bar {
   width: 100%;
   margin: 0px auto;
   padding: 20px;
   position: fixed;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.7);
 }
 header ul.nav-bar li {
   float: right;
@@ -265,7 +276,6 @@ section.main-image {
   padding-top: 200px;
   width: 100%;
   background-image: url("../images/summer.jpg");
-  background-size: fixed;
 }
 section.main-image h1 {
   color: #fff;
