@@ -1,7 +1,35 @@
 doctype html
 html
   head
-    title= title
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='description', content='#{description}')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+      
+    //- favicon
+    link(rel='icon', type='image/ico', href='../images/favicon.ico')
+    link(rel='apple-touch-icon', href='../images/apple-touch-icon.png')
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+      
+    title= title
+    
+  body(class='#{bodyClass}')
+    
+    main
+    //- Header  
+    block header
+      include ./partials/header
+
+    //- Site Content
+    .main(role='main')
+      block content
+
+    //- Footer      
+    block footer
+      include ./partials/footer
+      
+      
+    script(src='http://code.jquery.com/jquery-1.11.0.min.js') 
+    script(src='/js/main.js') 
+    
+    block scripts
