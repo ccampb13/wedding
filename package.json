@@ -5,8 +5,7 @@
   "private": true,
   "homepage": "chadcampbell.info",
   "scripts": {
-    "start": "./node_modules/.bin/supervisor app.js",
-    "test": "./node_modules/.bin/mocha -u tdd"
+    "start": "./node_modules/.bin/supervisor app.js"
   },
 
   "dependencies": {
@@ -17,7 +16,6 @@
     "express": "~4.9.0",
     "jade": "~1.6.0",
     "jshint-stylish": "^1.0.0",
-    "mocha": "*",
     "morgan": "~1.3.0",
     "serve-favicon": "~2.1.3",
     "sinon": "*",
