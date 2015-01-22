@@ -2,6 +2,10 @@
   "name": "wedding",
   "description": "Wedding website for EJ Boyer and Chad Campbell",
   "version": "0.0.2",
+  "engines": {
+    "node": "0.10.33",
+    "npm": "2.1.9"
+  },
   "private": true,
   "homepage": "chadcampbell.info",
   "scripts": {
