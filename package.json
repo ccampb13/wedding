@@ -1,13 +1,8 @@
 {
   "name": "wedding",
   "description": "Wedding website for EJ Boyer and Chad Campbell",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
-  "contributors": [
-    "Chad Campbell <ccampb13@gmail.com>"
-    "EJ Boyer <elanorjane.boyer@gmail.com>"
-  ],
-
   "homepage": "chadcampbell.info",
   "scripts": {
     "start": "./node_modules/.bin/supervisor app.js",
