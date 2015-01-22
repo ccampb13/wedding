@@ -7,12 +7,13 @@
     "Chad Campbell <ccampb13@gmail.com>"
     "EJ Boyer <elanorjane.boyer@gmail.com>"
   ],
-  "homepage": "chadcampbell.info",
 
+  "homepage": "chadcampbell.info",
   "scripts": {
     "start": "./node_modules/.bin/supervisor app.js",
     "test": "./node_modules/.bin/mocha -u tdd"
   },
+
   "dependencies": {
     "body-parser": "~1.8.1",
     "chai": "*",
