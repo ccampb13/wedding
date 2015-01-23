@@ -10,12 +10,6 @@
   font-style: normal;
   font-weight: normal;
 }
-@font-face {
-  font-family: 'Sudestada';
-  src: url("../fonts/Sudestada.ttf") format('truetype');
-  font-style: normal;
-  font-weight: normal;
-}
 .defaultType,
 body,
 p,
