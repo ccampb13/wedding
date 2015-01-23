@@ -1,6 +1,9 @@
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
+var nib = require('nib');
+var jeet = require('jeet');
+var rupture = require('rupture');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 // var debug = require('debug')('wedding');

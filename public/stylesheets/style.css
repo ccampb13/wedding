@@ -151,10 +151,7 @@ section.introduction article.opening-statement {
   width: 60%;
   margin: 0px auto;
 }
-section.introduction article.opening-statement div {
-  text-align: center;
-}
-section.introduction article.opening-statement div p {
+section.introduction article.opening-statement div.center p {
   margin: 10px auto;
   padding: 20px auto;
 }
