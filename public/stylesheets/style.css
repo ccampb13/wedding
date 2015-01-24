@@ -53,6 +53,11 @@ h1 {
   font-size: 54px;
   line-height: 70px;
 }
+@media screen and (max-width: 479px) {
+  h1 {
+    font-size: 45px;
+  }
+}
 h2 {
   font-size: 45px;
   line-height: 64px;
@@ -248,7 +253,7 @@ section.introduction article.profiles figure {
 section.introduction article.profiles figure img.profile {
   height: 200px;
   width: 300px;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 section.introduction article.profiles figure h5 {
   display: inline-block;
@@ -256,6 +261,11 @@ section.introduction article.profiles figure h5 {
 }
 section.introduction article.profiles figure p {
   font-size: 14px;
+}
+@media screen and (max-width: 479px) {
+  section.introduction article.profiles figure {
+    margin: 10px auto;
+  }
 }
 section.nashville {
   padding-top: 200px;
@@ -286,10 +296,35 @@ section.registry article.where-to-buy ul.register-links li {
   display: inline-block;
 }
 section.registry article.where-to-buy ul.register-links li a {
-  margin: 20px;
-  font-size: 50px;
-  color: #313131;
-  text-decoration: none;
+  margin: 50px;
+  opacity: 0.5;
+}
+section.registry article.where-to-buy ul.register-links li a:hover {
+  opacity: 1;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  section.registry article.where-to-buy ul.register-links li {
+    display: block;
+  }
+  section.registry article.where-to-buy ul.register-links li a {
+    margin: 0;
+  }
+  section.registry article.where-to-buy ul.register-links li a img {
+    padding-bottom: 30px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 479px) {
+  section.registry article.where-to-buy ul.register-links li {
+    display: block;
+  }
+  section.registry article.where-to-buy ul.register-links li a {
+    margin: 0;
+  }
+  section.registry article.where-to-buy ul.register-links li a img {
+    width: 200px;
+    padding-bottom: 30px;
+  }
 }
 section.travel {
   text-align: center;
@@ -317,6 +352,13 @@ section.travel h6 {
   text-transform: uppercase;
   font-size: 30px;
   margin: 5px;
+}
+@media screen and (max-width: 479px) {
+  a.button {
+    background-color: #fff;
+    color: #313131;
+    border: 1px solid #313131;
+  }
 }
 .icon.animated.over-scale {
   width: 125px;
