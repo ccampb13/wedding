@@ -1,3 +1,9 @@
+.black {
+  color: #000;
+}
+.white {
+  color: #fff;
+}
 @font-face {
   font-family: 'JosefinSlab-Regular';
   src: url("../fonts/JosefinSlab-Regular.ttf") format('truetype');
@@ -82,6 +88,39 @@ below(3)
 below(2)
 below(1)
 }
+body,
+html,
+main {
+  padding: 0px;
+  margin: 0px;
+}
+height: 100%,
+a {
+  color: #00b7ff;
+}
+section {
+  border-bottom: 2px solid rgba(143,143,143,0.9);
+  box-shadow: 0 0 5px;
+  padding-top: 100px;
+}
+section.main-image {
+  padding-top: 200px;
+  width: 100%;
+  background-image: url("../images/summer.jpg");
+}
+section.main-image h1 {
+  color: #fff;
+}
+section.cd-fixed-bg {
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section.cd-scrolling-bg {
+  min-height: 100vh;
+}
 .button {
   display: inline-block;
   padding: 10px 32px;
@@ -120,19 +159,41 @@ footer .email {
   font-size: 20px;
   text-align: center;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  footer #mc_embed_signup .email,
+  footer #mc_embed_signup .button {
+    margin-top: 10px;
+  }
+  footer #mc_embed_signup .subscribe {
+    display: block;
+  }
+  footer #mc_embed_signup .button {
+    background-color: #313131;
+    -webkit-appearance: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  footer #mc_embed_signup .email,
+  footer #mc_embed_signup .button {
+    margin-top: 10px;
+  }
+  footer #mc_embed_signup .button {
+    background-color: #313131;
+    -webkit-appearance: none;
+  }
+}
 header {
   text-align: center;
   min-height: 60px;
   margin: 0px;
-below(3)
 }
 header ul.nav-bar {
   width: 100%;
   margin: 0px auto;
-  padding: 20px;
+  padding: 20px 0 20px;
   position: fixed;
   list-style-type: none;
-  background-color: rgba(255,255,255,0.7);
+  background-color: #fff;
 }
 header ul.nav-bar li {
   display: inline-block;
@@ -144,6 +205,24 @@ header ul.nav-bar li a {
   color: #000;
   text-transform: uppercase;
   margin-top: 5px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  header ul.nav-bar li {
+    margin: 0px 10px;
+  }
+}
+@media screen and (max-width: 479px) {
+  header {
+    min-height: 135px;
+  }
+  header ul.nav-bar li {
+    display: block;
+    margin: 0 0;
+    padding-bottom: 5px;
+  }
+  header ul.nav-bar li a {
+    border-bottom: 1px solid #8f8f8f;
+  }
 }
 section.introduction {
   text-align: center;
@@ -157,7 +236,7 @@ section.introduction article.opening-statement div.center p {
   padding: 20px auto;
 }
 section.introduction article.profiles {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 section.introduction article.profiles figure {
   display: inline-block;
@@ -169,6 +248,7 @@ section.introduction article.profiles figure {
 section.introduction article.profiles figure img.profile {
   height: 200px;
   width: 300px;
+  border-radius: 4px;
 }
 section.introduction article.profiles figure h5 {
   display: inline-block;
@@ -246,37 +326,4 @@ section.travel h6 {
 }
 .icon.animated.over-scale .path-1 {
   fill: #fff;
-}
-body,
-html,
-main {
-  padding: 0px;
-  margin: 0px;
-}
-height: 100%,
-a {
-  color: #00b7ff;
-}
-section {
-  border-bottom: 2px solid rgba(143,143,143,0.9);
-  box-shadow: 0 0 5px;
-  padding-top: 100px;
-}
-section.main-image {
-  padding-top: 200px;
-  width: 100%;
-  background-image: url("../images/summer.jpg");
-}
-section.main-image h1 {
-  color: #fff;
-}
-section.cd-fixed-bg {
-  min-height: 100vh;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-section.cd-scrolling-bg {
-  min-height: 100vh;
 }

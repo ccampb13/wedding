@@ -7,10 +7,10 @@ header
   ul.nav-bar
     width: 100%
     margin: 0px auto
-    padding: 20px
+    padding: 20px 0 20px
     position: fixed
     list-style-type: none
-    background-color: rgba(white, 0.7)
+    background-color: $white
 
     li
       display: inline-block
@@ -23,10 +23,22 @@ header
         text-transform: uppercase
         margin-top: 5px
 
+@media screen and (min-width: 480px) and (max-width: 767px)
 
-  +below(3)
-    header#top
-      ul.nav-bar
-        li
-          a
-            border: 3px solid yellow
+  header ul.nav-bar li
+    margin: 0px 10px
+
+@media screen and (max-width: 479px)
+
+  header
+    min-height: 135px
+
+    ul.nav-bar
+
+      li
+        display: block
+        margin: 0 0
+        padding-bottom: 5px
+
+        a
+          border-bottom: 1px solid $grey-lighter

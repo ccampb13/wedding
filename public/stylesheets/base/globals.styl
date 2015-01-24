@@ -42,3 +42,37 @@ desktop-cutoff  = 1200px
   +below(1)
     width: $mobileWidth
     padding: 0 10px
+
+body,
+html,
+main
+  padding: 0px
+  margin: 0px
+	height: 100%
+
+a
+  color: #00B7FF
+
+
+section
+  border-bottom: 2px solid rgba($grey-lighter, .9)
+  box-shadow: 0 0 5px
+  padding-top: 100px
+
+  &.main-image
+    padding-top: 200px
+    width: 100%
+    background-image: url('../images/summer.jpg')
+
+    h1
+      color: white
+
+  &.cd-fixed-bg
+    min-height: 100vh
+    background-size: cover
+    background-attachment: fixed
+    background-repeat: no-repeat
+    background-position: center center
+
+  &.cd-scrolling-bg
+    min-height: 100vh
