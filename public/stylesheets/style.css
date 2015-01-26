@@ -4,6 +4,15 @@
 .white {
   color: #fff;
 }
+.gold {
+  color: #fad46b;
+}
+.green {
+  color: #14cc96;
+}
+.red {
+  color: #f26964;
+}
 @font-face {
   font-family: 'JosefinSlab-Regular';
   src: url("../fonts/JosefinSlab-Regular.ttf") format('truetype');
@@ -107,7 +116,6 @@ section {
   padding-top: 100px;
 }
 section.main-image {
-  padding-top: 200px;
   width: 100%;
   background-image: url("../images/summer.jpg");
 }
