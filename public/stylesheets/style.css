@@ -306,6 +306,7 @@ section.registry article.where-to-buy {
 section.registry article.where-to-buy p {
   font-size: 30px;
   color: #8f8f8f;
+  line-height: 1.1em;
 }
 section.registry article.where-to-buy ul.register-links {
   padding: 20px;
@@ -334,6 +335,9 @@ section.registry article.where-to-buy ul.register-links li a:hover {
   }
 }
 @media screen and (max-width: 479px) {
+  section.registry article.where-to-buy {
+    width: 90%;
+  }
   section.registry article.where-to-buy ul.register-links {
     margin: 0;
   }
@@ -376,15 +380,25 @@ section.travel h6 {
   margin: 5px;
   margin-top: 50px;
 }
-section.travel p {
+section.travel p.other {
   width: 80%;
   margin: 24px auto 40px;
+  font-size: 30px;
+  color: #8f8f8f;
+  line-height: 1.1em;
+}
+section.travel p.other a {
+  color: #fad46b;
+  text-decoration: none;
 }
 @media screen and (max-width: 479px) {
   a.button {
     background-color: #fff;
     color: #313131;
     border: 1px solid #313131;
+  }
+  p.other {
+    width: 40%;
   }
 }
 .icon.animated.over-scale {
