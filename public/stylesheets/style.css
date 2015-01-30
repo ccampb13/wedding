@@ -296,6 +296,10 @@ section.nashville {
 section.nashville h1 {
   color: #fff;
 }
+section.nashville div#content-container {
+  min-height: 200px;
+  background-color: #f00;
+}
 section.registry {
   text-align: center;
 }
