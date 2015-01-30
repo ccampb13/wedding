@@ -6,19 +6,24 @@ nashville.get('/', function(req, res) {
   res.render('nashville/index');
 });
 
-/* GET Nashville Drinks Section. */
-nashville.get('/drinks', function(req, res) {
-  res.render('nashville/drinks');
+/* GET Nashville Where to Drink Section. */
+nashville.get('/drink', function(req, res) {
+  res.render('nashville/drink');
 });
 
-/* GET Nashville Fun Section. */
-nashville.get('/fun', function(req, res) {
-  res.render('nashville/fun');
+/* GET Nashville What to Do Section. */
+nashville.get('/do', function(req, res) {
+  res.render('nashville/do');
 });
 
-/* GET Nashville Eats Section. */
-nashville.get('/eats', function(req, res) {
-  res.render('nashville/eats');
+/* GET Nashville Where to Eat Section. */
+nashville.get('/eat', function(req, res) {
+  res.render('nashville/eat');
+});
+
+/* GET Nashville Need to Know Section. */
+nashville.get('/know', function(req, res) {
+  res.render('nashville/know');
 });
 
 module.exports = nashville;
