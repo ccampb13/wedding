@@ -6,7 +6,7 @@ party.get('/', function(req, res) {
   res.render('party/index');
 });
 
-/* GET Paty Welcome Drinks Section. */
+/* GET Party Welcome Drinks Section. */
 party.get('/welcome', function(req, res) {
   res.render('party/welcome');
 });

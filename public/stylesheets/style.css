@@ -242,51 +242,6 @@ header ul.nav-bar li a {
     border-bottom: 1px solid #8f8f8f;
   }
 }
-section.introduction {
-  text-align: center;
-}
-section.introduction article.opening-statement {
-  width: 80%;
-  margin: 0px auto;
-}
-section.introduction article.opening-statement div.center p {
-  margin: 10px auto;
-  padding: 20px auto;
-}
-section.introduction article.profiles {
-  margin-top: 80px;
-}
-section.introduction article.profiles figure {
-  display: inline-block;
-  width: 300px;
-  min-height: 400px;
-  margin: 10px 20px;
-  overflow: hidden;
-}
-section.introduction article.profiles figure img.profile {
-  height: 200px;
-  width: 300px;
-  border-radius: 5px;
-}
-section.introduction article.profiles figure h5 {
-  display: inline-block;
-  margin: 5px auto;
-}
-section.introduction article.profiles figure p {
-  font-size: 14px;
-}
-@media screen and (max-width: 479px) {
-  section.introduction article.profiles figure {
-    width: 100%;
-    margin: 50px 0;
-    overflow: visible;
-  }
-  section.introduction article.profiles figure img.profile {
-    min-width: 100%;
-    min-height: 300px;
-    border-radius: 0;
-  }
-}
 section.nashville {
   padding-top: 200px;
   width: 100%;
@@ -296,13 +251,62 @@ section.nashville {
 section.nashville h1 {
   color: #fff;
 }
-section.party#party {
+section.party {
   padding-top: 200px;
   width: 100%;
 }
 div#party-container {
   border: 1px solid #f00;
   min-height: 200px;
+}
+section.people {
+  text-align: center;
+}
+section.people article.opening-statement {
+  width: 80%;
+  margin: 0px auto;
+}
+section.people article.opening-statement div.center p {
+  margin: 10px auto;
+  padding: 20px auto;
+}
+section.people article.profiles {
+  margin-top: 80px;
+}
+section.people article.profiles figure {
+  display: inline-block;
+  width: 300px;
+  min-height: 400px;
+  margin: 10px 20px;
+  overflow: hidden;
+}
+section.people article.profiles figure img.profile {
+  height: 200px;
+  width: 300px;
+  border-radius: 5px;
+}
+section.people article.profiles figure h5 {
+  display: inline-block;
+  margin: 5px auto;
+}
+section.people article.profiles figure p {
+  font-size: 14px;
+}
+@media screen and (max-width: 479px) {
+  section.people article.profiles figure {
+    width: 100%;
+    margin: 50px 0;
+    overflow: visible;
+  }
+  section.people article.profiles figure img.profile {
+    min-width: 100%;
+    min-height: 300px;
+    border-radius: 0;
+  }
+}
+section.bridesmaids div.#bridesmaids-container {
+  min-height: 200px;
+  background-color: #f00;
 }
 section.registry {
   text-align: center;
