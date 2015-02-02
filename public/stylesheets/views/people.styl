@@ -5,11 +5,8 @@ section.people
     width: 80%
     margin: 0px auto
 
-    div.center
-
-      p
-        margin: 10px auto
-        padding: 20px auto
+    h4
+      line-height: 1.2em
 
   article.profiles
     margin-top: 80px
@@ -17,7 +14,7 @@ section.people
     figure
       display: inline-block
       width: 300px
-      min-height: 400px
+      min-height: 600px
       margin: 10px 20px
       overflow: hidden
 
@@ -33,15 +30,22 @@ section.people
       p
         font-size: 14px
 
-      @media screen and (max-width: 479px)
-        width: 100%
-        margin: 50px 0
-        overflow: visible
+  @media screen and (min-width: 480px) and (max-width: 767px)
+    article.profiles
+      figure
+        padding: 0
+        width: 500px
 
         img.profile
-          min-width: 100%
-          min-height: 300px
-          border-radius: 0
+          width: 100%
+          height: auto
+
+  @media screen and (max-width: 479px)
+    article.profiles
+      figure
+        width: 80%
+        margin: 0 auto
+
 
 section.bridesmaids
   div.#bridesmaids-container

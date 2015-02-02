@@ -8,19 +8,34 @@
   }
 
   function mobileNavigation() {
-    //
-    // // Stupid scope losing jQuery...
-    // var self = this;
 
     // Toggle the mobile nav on click
     $('.js-toggle-menu').on('click', function(e) {
       // Only prevent default actions for the close button
-      // if($(e.currentTarget).hasClass('close')) {
-      //   e.preventDefault();
-      // }
+      if($(e.currentTarget).hasClass('close')) {
+        e.preventDefault();
+      }
 
-      // $(self.elems.mobile).find('.navigation-panel').toggleClass('opened');
+      $('header').find('.navigation-panel').toggleClass('opened');
+      $('header').find('.user-links ul li').toggleClass('opened');
 
     });
   };
+
+  toggle();
+
+
+//below switches the navigation to mobile mode
+window.onresize = function() {
+    toggle();
+}
+
+function toggle() {
+    if (window.innerWidth < 768) {
+        document.getElementById('mobileNav').style.display = '';
+    }
+    else {
+        document.getElementById('mobileNav').style.display = 'none';
+    }
+}
 })();

@@ -5,6 +5,32 @@ block header
       ul.nav-bar
         li: a(href='#people') People
         li: a(href='#party') Party
-        li: a.js-toggle-menu(href='#nashville') Nashville
+        li: a(href='#nashville') Nashville
         li: a(href='#travel') Travel + Lodging
         li: a(href='#registry') Registry
+        
+    //-
+    //-begin mobile nav menu. only seen below 768px    
+    nav.mobile#mobileNav(role='navigation')
+      div.user-links
+        ul
+          li
+            img.hamburger.js-toggle-menu(src='../images/hamburger.png')
+
+      //- Panel (slides out when toggled by user)
+      div.navigation-panel
+
+        section.main-menu
+          div.center
+            ul.tier1
+              li: a(href='#people') People
+              li: a(href='#party') Party
+              li: a(href='#nashville') Nashville
+              li: a(href='#travel') Travel + Lodging
+              li: a(href='#registry') Registry
+            
+
+        section.user-actions
+          div.center
+            a(href='#').close.js-toggle-menu
+              span Close

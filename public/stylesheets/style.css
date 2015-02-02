@@ -204,6 +204,7 @@ header {
   text-align: center;
   min-height: 60px;
   margin: 0px;
+  position: relative;
 }
 header ul.nav-bar {
   width: 100%;
@@ -224,22 +225,94 @@ header ul.nav-bar li a {
   text-transform: uppercase;
   margin-top: 5px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
   header ul.nav-bar li {
-    margin: 0px 10px;
+    margin: 0px 15px;
   }
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   header {
-    min-height: 135px;
+    min-height: 0;
   }
-  header ul.nav-bar li {
+  header ul.nav-bar {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav.mobile {
+    margin-top: -20px;
+    padding: 0;
+  }
+  nav.mobile div.user-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav.mobile div.user-links ul li {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  nav.mobile div.user-links ul li.opened {
+    height: 100%;
+    background-color: #fff;
+  }
+  nav.mobile div.user-links ul li img.hamburger {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    float: left;
+  }
+  nav.mobile div.navigation-panel {
+    background: #fff;
+    display: block;
+    overflow: hidden;
+    height: 0px;
+    width: 100%;
+    transition: height 0.3s;
+    float: left;
+  }
+  nav.mobile div.navigation-panel.opened {
+    min-height: 290px;
+  }
+  nav.mobile div.navigation-panel section.main-menu {
+    padding-top: 30px;
+  }
+  nav.mobile div.navigation-panel section.main-menu ul.tier1 {
+    padding: 0;
+    margin: 0;
+  }
+  nav.mobile div.navigation-panel section.main-menu ul.tier1 li {
     display: block;
     margin: 0 0;
-    padding-bottom: 5px;
+    padding: 0 0 10px 10px;
+    text-align: left;
   }
-  header ul.nav-bar li a {
+  nav.mobile div.navigation-panel section.main-menu ul.tier1 li a {
+    text-decoration: none;
+    color: #313131;
+    opacity: 0.7;
     border-bottom: 1px solid #8f8f8f;
+    font-size: 20px;
+  }
+  nav.mobile div.navigation-panel section.main-menu ul.tier1 li a:hover {
+    opacity: 1;
+  }
+  nav.mobile div.navigation-panel section.user-actions {
+    padding-top: 30px;
+    text-align: left;
+  }
+  nav.mobile div.navigation-panel section.user-actions a {
+    text-decoration: none;
+    color: #313131;
+    opacity: 0.7;
+    padding: 0 0 0 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  nav.mobile div.navigation-panel section.user-actions a:hover {
+    opacity: 1;
   }
 }
 section.nashville {
@@ -266,9 +339,8 @@ section.people article.opening-statement {
   width: 80%;
   margin: 0px auto;
 }
-section.people article.opening-statement div.center p {
-  margin: 10px auto;
-  padding: 20px auto;
+section.people article.opening-statement h4 {
+  line-height: 1.2em;
 }
 section.people article.profiles {
   margin-top: 80px;
@@ -276,7 +348,7 @@ section.people article.profiles {
 section.people article.profiles figure {
   display: inline-block;
   width: 300px;
-  min-height: 400px;
+  min-height: 600px;
   margin: 10px 20px;
   overflow: hidden;
 }
@@ -292,16 +364,20 @@ section.people article.profiles figure h5 {
 section.people article.profiles figure p {
   font-size: 14px;
 }
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   section.people article.profiles figure {
-    width: 100%;
-    margin: 50px 0;
-    overflow: visible;
+    padding: 0;
+    width: 500px;
   }
   section.people article.profiles figure img.profile {
-    min-width: 100%;
-    min-height: 300px;
-    border-radius: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 479px) {
+  section.people article.profiles figure {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 section.bridesmaids div.#bridesmaids-container {

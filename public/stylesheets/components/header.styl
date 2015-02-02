@@ -2,6 +2,7 @@ header
   text-align: center
   min-height: 60px
   margin: 0px
+  position: relative
 
   ul.nav-bar
     width: 100%
@@ -22,22 +23,97 @@ header
         text-transform: uppercase
         margin-top: 5px
 
-@media screen and (min-width: 480px) and (max-width: 767px)
 
+@media screen and (min-width: 768px) and (max-width: 990px)
   header ul.nav-bar li
-    margin: 0px 10px
+    margin: 0px 15px
 
-@media screen and (max-width: 479px)
+
+@media screen and (max-width: 767px)
 
   header
-    min-height: 135px
+    min-height: 0
 
     ul.nav-bar
+      display: none
+      padding: 0
+      margin: 0
 
-      li
-        display: block
-        margin: 0 0
-        padding-bottom: 5px
+  //-
+  // Begin Mobile Navigation
+  nav.mobile
+    margin-top: -20px
+    padding: 0
+
+    div.user-links
+
+      ul
+        list-style-type: none
+        padding: 0
+        margin: 0
+
+        li
+          float: left
+          width: 100%
+          padding: 0
+          margin: 0
+
+          &.opened
+            height: 100%
+            background-color: $white
+
+          img.hamburger
+            width: 60px
+            height: 60px
+            margin-top: 20px
+            float: left
+
+    div.navigation-panel
+      background: white
+      display: block
+      overflow: hidden
+      height: 0px
+      width: 100%
+      transition: height .3s
+      float: left
+
+      &.opened
+        min-height: 290px
+
+      section.main-menu
+        padding-top: 30px
+
+        ul.tier1
+          padding: 0
+          margin: 0
+
+          li
+            display: block
+            margin: 0 0
+            padding: 0 0 10px 10px
+            text-align: left
+
+            a
+              text-decoration: none
+              color: $grey-darker
+              opacity: .7
+              border-bottom: 1px solid $grey-lighter
+              font-size: 20px
+
+              &:hover
+                opacity: 1
+
+      section.user-actions
+        padding-top: 30px
+        text-align: left
 
         a
-          border-bottom: 1px solid $grey-lighter
+          text-decoration: none
+          color: $grey-darker
+          opacity: .7
+          padding: 0 0 0 10px
+          margin-bottom: 10px
+          font-size: 20px
+
+          &:hover
+            opacity: 1
