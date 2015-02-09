@@ -264,6 +264,9 @@ footer p {
   font-size: 16px;
   color: #8f8f8f;
 }
+footer p span {
+  color: rgba(143,143,143,0.3);
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
   footer #mc_embed_signup .email,
   footer #mc_embed_signup .button {
