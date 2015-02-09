@@ -31,17 +31,12 @@ desktop-cutoff  = 1200px
 .center
   position: relative
   clear: both
-  center(maxWidth = $maxSiteWidth)
+  margin: 0 auto
+  width: 1140px
 
-  +below(3)
-    width: $desktopWidth
-
-  +below(2)
-    width: $tabletWidth
-
-  +below(1)
-    width: $mobileWidth
-    padding: 0 10px
+  @media screen and (max-width: 1200px)
+    width: 90%
+    margin: 0 5%
 
 body,
 html,
@@ -58,12 +53,17 @@ a
 section
   padding-top: 70px
 
+  @media screen and (max-width:767px)
+    padding-top: 20px
+
   &.main-image
     width: 100%
     background-image: url('../images/summer.jpg')
+    background-color darken($grey-darker, 50%)
 
     h1
       color: white
+      width: 100%
 
   &.cd-fixed-bg
     min-height: 100vh

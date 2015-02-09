@@ -1,54 +1,61 @@
 section.registry
-  text-align: center
+  padding-bottom: 40px
 
-  article.where-to-buy
-    margin: 5px auto
-    width: 80%
-    padding: 20px
+  div.center
+    article.where-to-buy
+      hr
+        margin-top: 3.2%
+        color: rgba($black, .2)
+        width: 10%
 
-    p
-      font-size: 30px
-      color: $grey-lighter
-      line-height: 1.1em
+      p
+        font-size: 24px
+        color: $grey-lighter
+        line-height: 1.1em
 
-    ul.register-links
-      padding: 20px
-      margin: 20px auto
+      ul.register-links
+        li
+          display: inline-block
 
-      li
-        display: inline-block
+          a
+            margin: 50px
+            opacity: .5
 
-        a
-          margin: 50px
-          opacity: .5;
-          &:hover
-            opacity: 1
+            &:hover
+              opacity: 1
 
-@media screen and (min-width: 480px) and (max-width: 767px)
+@media screen and (min-width: 768px) and (max-width: 1150px)
   section.registry
     article.where-to-buy
       ul.register-links
-        li
-          display: block
+        text-align: center
 
+        li
+          display: inline-block
+          margin: 0 auto
           a
             margin: 0
+
             img
-              padding-bottom: 30px
-              width: 300px
+              width: 275px
 
-@media screen and (max-width: 479px)
+@media screen and (max-width: 767px)
   section.registry
     article.where-to-buy
-      width: 90%
+      p
+        text-align: left
+        font-size: 16px !important
+        line-height: 1.5em !important
+
       ul.register-links
-        margin: 0
+        text-align: center
+        padding: 0
 
         li
           display: block
 
           a
-            margin: 0
+            margin: 0 auto
 
             img
               width: 200px

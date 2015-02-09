@@ -1,3 +1,71 @@
+.animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+.fade-in-up {
+  animation-name: fadeInUp;
+}
+.delay-1 {
+  animation-delay: 0.25s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 15%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 15%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 15%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-ms-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 15%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 15%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 .black {
   color: #000;
 }
@@ -76,6 +144,7 @@ h1 {
 h2 {
   font-size: 45px;
   line-height: 64px;
+  margin: 20px 0;
 }
 h3 {
   font-size: 35px;
@@ -95,7 +164,7 @@ h6 {
 }
 p {
   line-height: 26px;
-  font-size: 24px;
+  font-size: 18px;
 }
 .main section {
   position: relative;
@@ -104,9 +173,14 @@ p {
 .center {
   position: relative;
   clear: both;
-below(3)
-below(2)
-below(1)
+  margin: 0 auto;
+  width: 1140px;
+}
+@media screen and (max-width: 1200px) {
+  .center {
+    width: 90%;
+    margin: 0 5%;
+  }
 }
 body,
 html,
@@ -122,12 +196,19 @@ a {
 section {
   padding-top: 70px;
 }
+@media screen and (max-width:767px) {
+  section {
+    padding-top: 20px;
+  }
+}
 section.main-image {
   width: 100%;
   background-image: url("../images/summer.jpg");
+  background-color: #191919;
 }
 section.main-image h1 {
   color: #fff;
+  width: 100%;
 }
 section.cd-fixed-bg {
   min-height: 100vh;
@@ -162,20 +243,26 @@ section.cd-scrolling-bg {
 }
 footer {
   text-align: center;
+  font-family: "Alright Sans LT", "Alright Sans LT Medium", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 footer #mc_embed_signup {
   margin: 20px auto;
-  font-size: 20px;
+  font-size: 16px;
 }
 footer .subscribe {
   margin-right: 10px;
+  font-size: 16px;
 }
 footer .email {
   margin-right: 10px;
   width: 175px;
   height: 30px;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
+}
+footer p {
+  font-size: 16px;
+  color: #8f8f8f;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   footer #mc_embed_signup .email,
@@ -206,7 +293,7 @@ header {
   margin: 0px;
   position: relative;
 }
-header ul.nav-bar {
+header div ul.nav-bar {
   width: 100%;
   margin: 0px auto;
   padding: 20px 0 20px;
@@ -214,11 +301,11 @@ header ul.nav-bar {
   list-style-type: none;
   background-color: #fff;
 }
-header ul.nav-bar li {
+header div ul.nav-bar li {
   display: inline-block;
   margin: 0px 40px;
 }
-header ul.nav-bar li a {
+header div ul.nav-bar li a {
   font-size: 20px;
   text-decoration: none;
   color: #000;
@@ -226,8 +313,8 @@ header ul.nav-bar li a {
   margin-top: 5px;
 }
 @media screen and (min-width: 768px) and (max-width: 990px) {
-  header ul.nav-bar li {
-    margin: 0px 15px;
+  header div ul.nav-bar li {
+    margin: 0px 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -259,8 +346,8 @@ header ul.nav-bar li a {
     background-color: #fff;
   }
   nav.mobile div.user-links ul li img.hamburger {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     margin-top: 20px;
     float: left;
   }
@@ -333,41 +420,53 @@ div#party-container {
   min-height: 200px;
 }
 section.people {
+  padding-top: 30px;
+}
+section.people div.center {
   text-align: center;
 }
-section.people article.opening-statement {
+section.people div.center article.opening-statement {
   width: 80%;
-  margin: 0px auto;
+  margin: 0 auto;
 }
-section.people article.opening-statement h4 {
-  line-height: 1.2em;
+section.people div.center article.opening-statement h6 {
+  line-height: 1.25em;
+  text-align: left;
 }
-section.people article.profiles {
-  margin-top: 80px;
+section.people div.center article.profiles {
+  margin-top: 70px;
 }
-section.people article.profiles figure {
+section.people div.center article.profiles figure {
   display: inline-block;
   width: 300px;
   min-height: 600px;
   margin: 10px 20px;
   overflow: hidden;
+  text-align: center;
 }
-section.people article.profiles figure img.profile {
+section.people div.center article.profiles figure img.profile {
   height: 200px;
   width: 300px;
-  border-radius: 5px;
+  border-radius: 4px;
 }
-section.people article.profiles figure h5 {
+section.people div.center article.profiles figure h5 {
   display: inline-block;
-  margin: 5px auto;
+  margin-bottom: 5px;
 }
-section.people article.profiles figure p {
+section.people div.center article.profiles figure hr {
+  margin-top: 3.2%;
+  color: rgba(0,0,0,0.2);
+  width: 20%;
+}
+section.people div.center article.profiles figure p {
   font-size: 14px;
+  text-align: left;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   section.people article.profiles figure {
     padding: 0;
     width: 500px;
+    margin-top: 20px;
   }
   section.people article.profiles figure img.profile {
     width: 100%;
@@ -385,109 +484,116 @@ section.bridesmaids div.#bridesmaids-container {
   background-color: #f00;
 }
 section.registry {
-  text-align: center;
+  padding-bottom: 40px;
 }
-section.registry article.where-to-buy {
-  margin: 5px auto;
-  width: 80%;
-  padding: 20px;
+section.registry div.center article.where-to-buy hr {
+  margin-top: 3.2%;
+  color: rgba(0,0,0,0.2);
+  width: 10%;
 }
-section.registry article.where-to-buy p {
-  font-size: 30px;
+section.registry div.center article.where-to-buy p {
+  font-size: 24px;
   color: #8f8f8f;
   line-height: 1.1em;
 }
-section.registry article.where-to-buy ul.register-links {
-  padding: 20px;
-  margin: 20px auto;
-}
-section.registry article.where-to-buy ul.register-links li {
+section.registry div.center article.where-to-buy ul.register-links li {
   display: inline-block;
 }
-section.registry article.where-to-buy ul.register-links li a {
+section.registry div.center article.where-to-buy ul.register-links li a {
   margin: 50px;
   opacity: 0.5;
 }
-section.registry article.where-to-buy ul.register-links li a:hover {
+section.registry div.center article.where-to-buy ul.register-links li a:hover {
   opacity: 1;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+  section.registry article.where-to-buy ul.register-links {
+    text-align: center;
+  }
   section.registry article.where-to-buy ul.register-links li {
-    display: block;
+    display: inline-block;
+    margin: 0 auto;
   }
   section.registry article.where-to-buy ul.register-links li a {
     margin: 0;
   }
   section.registry article.where-to-buy ul.register-links li a img {
-    padding-bottom: 30px;
-    width: 300px;
+    width: 275px;
   }
 }
-@media screen and (max-width: 479px) {
-  section.registry article.where-to-buy {
-    width: 90%;
+@media screen and (max-width: 767px) {
+  section.registry article.where-to-buy p {
+    text-align: left;
+    font-size: 16px !important;
+    line-height: 1.5em !important;
   }
   section.registry article.where-to-buy ul.register-links {
-    margin: 0;
+    text-align: center;
+    padding: 0;
   }
   section.registry article.where-to-buy ul.register-links li {
     display: block;
   }
   section.registry article.where-to-buy ul.register-links li a {
-    margin: 0;
+    margin: 0 auto;
   }
   section.registry article.where-to-buy ul.register-links li a img {
     width: 200px;
     padding-bottom: 30px;
   }
 }
-section.travel {
+section.travel div.center {
   text-align: center;
 }
-section.travel article {
+section.travel div.center hr {
+  margin-top: 3.2%;
+  color: rgba(0,0,0,0.2);
+  width: 10%;
+}
+section.travel div.center article {
   display: inline-block;
   height: 270px;
   margin: 20px;
-  text-align: center;
 }
-section.travel article figure.icon img {
+section.travel div.center article figure.icon img {
   width: 100px;
   height: 100px;
 }
-section.travel article p {
+section.travel div.center article p {
   text-transform: uppercase;
   display: block;
   font-size: 30px;
 }
-section.travel article a.button {
+section.travel div.center article a.button {
   text-transform: uppercase;
   text-decoration: none;
 }
-section.travel h6 {
+section.travel div.center h6 {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 24px;
   margin: 5px;
   margin-top: 50px;
 }
-section.travel p.other {
-  width: 80%;
-  margin: 24px auto 40px;
-  font-size: 30px;
+section.travel div.center p.other {
+  font-size: 24px;
   color: #8f8f8f;
   line-height: 1.1em;
+  text-align: left;
 }
-section.travel p.other a {
-  color: #fad46b;
+section.travel div.center p.other a {
+  color: #313131;
   text-decoration: none;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   a.button {
     background-color: #fff;
     color: #313131;
     border: 1px solid #313131;
   }
   p.other {
-    width: 40%;
+    text-align: left;
+    font-size: 16px !important;
+    line-height: 1.5em !important;
   }
 }
 .icon.animated.over-scale {

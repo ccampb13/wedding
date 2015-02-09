@@ -1,40 +1,52 @@
 section.people
-  text-align: center
+  padding-top: 30px
 
-  article.opening-statement
-    width: 80%
-    margin: 0px auto
+  div.center
+    text-align: center
 
-    h4
-      line-height: 1.2em
+    article.opening-statement
+      width: 80%
+      margin: 0 auto
 
-  article.profiles
-    margin-top: 80px
+      h6
+        line-height: 1.25em
+        text-align: left
 
-    figure
-      display: inline-block
-      width: 300px
-      min-height: 600px
-      margin: 10px 20px
-      overflow: hidden
+    article.profiles
+      margin-top: 70px
 
-      img.profile
-        height: 200px
-        width: 300px
-        border-radius: 5px
-
-      h5
+      figure
         display: inline-block
-        margin: 5px auto
+        width: 300px
+        min-height: 600px
+        margin: 10px 20px
+        overflow: hidden
+        text-align: center
 
-      p
-        font-size: 14px
+        img.profile
+          height: 200px
+          width: 300px
+          border-radius: 4px
+
+        h5
+          display: inline-block
+          margin-bottom: 5px
+
+        hr
+          margin-top: 3.2%
+          color: rgba($black, .2)
+          width: 20%
+
+        p
+          font-size: 14px
+          text-align: left
 
   @media screen and (min-width: 480px) and (max-width: 767px)
     article.profiles
       figure
         padding: 0
         width: 500px
+        margin-top: 20px
 
         img.profile
           width: 100%

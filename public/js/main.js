@@ -30,12 +30,14 @@ window.onresize = function() {
     toggle();
 }
 
-function toggle() {
+function toggle(e) {
     if (window.innerWidth < 768) {
         document.getElementById('mobileNav').style.display = '';
     }
     else {
         document.getElementById('mobileNav').style.display = 'none';
     }
-}
+
+    e.preventDefault();
+  }
 })();

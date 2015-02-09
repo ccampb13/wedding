@@ -1,2 +1,26 @@
 $duration = .3s
 $easing   = ease-in-out
+
+.animated
+  animation-duration: .5s
+  animation-fill-mode: both
+
+@keyframes fadeInUp
+  0%
+    opacity: 0
+    transform: translate3d(0, 15%, 0);
+
+  100%
+    opacity: 1
+    transform: none
+
+.fade-in-up
+  animation-name: fadeInUp
+
+// Add individual animations as needed
+
+.delay-1
+  animation-delay: .25s
+
+.delay-2
+  animation-delay: .4s
