@@ -1,7 +1,29 @@
 section.party
-  padding-top: 200px
+  padding-top: 50px
   width: 100%
 
-div#party-container
-  border 1px solid red
-  min-height: 200px
+  div.center
+    article.events
+      text-align: center
+
+      ul
+        padding: 0
+        margin: 0
+
+        li
+          list-style-type: none
+          display: inline-block
+          margin: 5px
+
+          a
+            text-decoration: none
+            color: $grey-darker
+
+            span
+              margin-left: 5px
+              color: rgba($grey-lighter, .5)
+
+
+  div#party-container
+    border 1px solid $grey-darker
+    min-height: 200px

@@ -1,10 +1,12 @@
 section.party#party.cd-scrolling-bg
-  h1 Party
-  ul
-    li: a#welcome(href='#') Welcome
-    li: a#ceremony(href='#') Ceremony
-    li: a#reception(href='#') Reception
-    
-  div#party-container
-    include ../party/ceremony
-      
+  div.center
+    article.events
+      h2 Party
+      ul
+        li: a#welcome(href='#') Welcome
+        li: a#ceremony(href='#') Ceremony
+        li: a#reception(href='#') Reception
+        
+    div#party-container
+      include ../party/ceremony
+        

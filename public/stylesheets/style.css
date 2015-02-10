@@ -477,11 +477,32 @@ section.nashville div.center div#content-container ul li article p {
   font-size: 14px;
 }
 section.party {
-  padding-top: 200px;
+  padding-top: 50px;
   width: 100%;
+  height: auto;
 }
-div#party-container {
-  border: 1px solid #f00;
+section.party div.center article.events {
+  text-align: center;
+}
+section.party div.center article.events ul {
+  padding: 0;
+  margin: 0;
+}
+section.party div.center article.events ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px;
+}
+section.party div.center article.events ul li a {
+  text-decoration: none;
+  color: #313131;
+}
+section.party div.center article.events ul li a span {
+  margin-left: 5px;
+  color: rgba(143,143,143,0.5);
+}
+section.party div#party-container {
+  border: 1px solid #313131;
   min-height: 200px;
 }
 section.people {
@@ -556,9 +577,89 @@ section.people div.center article.profiles ul li figure p {
     margin: 0 auto;
   }
 }
-section.bridesmaids div.#bridesmaids-container {
+section.bridesmaids {
+  padding: 50px 0 50px;
+  width: 100%;
+  background-color: #ebebeb;
+}
+section.bridesmaids div.center article.party {
+  text-align: center;
+}
+section.bridesmaids div.center article.party h2 {
+  color: #313131;
+}
+section.bridesmaids div.center article.party ul {
+  padding: 0;
+  margin: 0;
+}
+section.bridesmaids div.center article.party ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px;
+}
+section.bridesmaids div.center article.party ul li a {
+  text-decoration: none;
+  color: #313131;
+}
+section.bridesmaids div.center article.party ul li a span {
+  margin-left: 5px;
+  color: rgba(143,143,143,0.5);
+}
+section.bridesmaids div#bridesmaids-container {
   min-height: 200px;
-  background-color: #f00;
+  text-align: center;
+}
+section.bridesmaids div#bridesmaids-container article {
+  background-color: #fff;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 4px;
+  min-width: 250px;
+  height: auto;
+  padding: 2%;
+  text-align: left;
+}
+section.groomsmen {
+  padding: 10px 0 50px;
+  width: 100%;
+  background-color: #ebebeb;
+}
+section.groomsmen div.center article.party {
+  text-align: center;
+}
+section.groomsmen div.center article.party h2 {
+  color: #313131;
+}
+section.groomsmen div.center article.party ul {
+  padding: 0;
+  margin: 0;
+}
+section.groomsmen div.center article.party ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px;
+}
+section.groomsmen div.center article.party ul li a {
+  text-decoration: none;
+  color: #313131;
+}
+section.groomsmen div.center article.party ul li a span {
+  margin-left: 5px;
+  color: rgba(143,143,143,0.5);
+}
+section.groomsmen div#groomsmen-container {
+  min-height: 200px;
+  text-align: center;
+}
+section.groomsmen div#groomsmen-container article {
+  background-color: #fff;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 4px;
+  min-width: 250px;
+  height: auto;
+  padding: 2%;
+  text-align: left;
 }
 section.registry {
   padding-bottom: 40px;
