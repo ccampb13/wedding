@@ -209,6 +209,7 @@ section.main-image {
 section.main-image h1 {
   color: #fff;
   width: 100%;
+  position: absolute;
 }
 section.cd-fixed-bg {
   min-height: 100vh;
@@ -295,6 +296,7 @@ header {
   min-height: 60px;
   margin: 0px;
   position: relative;
+  z-index: 100000;
 }
 header div ul.nav-bar {
   width: 100%;
@@ -357,6 +359,7 @@ header nav.mobile {
     height: 40px;
     margin-top: 20px;
     float: left;
+    z-index: 1000;
   }
   header nav.mobile div.navigation-panel {
     background: #fff;
@@ -446,15 +449,16 @@ section.people div.center article.profiles {
 section.people div.center article.profiles figure {
   display: inline-block;
   width: 300px;
-  min-height: 600px;
+  min-height: 620px;
   margin: 10px 20px;
   overflow: hidden;
   text-align: center;
 }
 section.people div.center article.profiles figure img.profile {
-  height: 200px;
   width: 300px;
+  height: auto;
   border-radius: 4px;
+  border: 1px solid #8f8f8f;
 }
 section.people div.center article.profiles figure h5 {
   display: inline-block;
