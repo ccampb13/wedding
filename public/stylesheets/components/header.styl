@@ -23,6 +23,9 @@ header
         text-transform: uppercase
         margin-top: 5px
 
+  nav.mobile
+    display: none
+
 
 @media screen and (min-width: 768px) and (max-width: 990px)
   header div ul.nav-bar li
@@ -34,85 +37,86 @@ header
   header
     min-height: 0
 
-    ul.nav-bar
+    div ul.nav-bar
       display: none
       padding: 0
       margin: 0
 
-  //-
-  // Begin Mobile Navigation
-  nav.mobile
-    margin-top: -20px
-    padding: 0
-
-    div.user-links
-      ul
-        list-style-type: none
-        padding: 0
-        margin: 0
-
-        li
-          float: left
-          width: 100%
-          padding: 0
-          margin: 0
-
-          &.opened
-            height: 100%
-            background-color: $white
-
-          img.hamburger
-            width: 40px
-            height: 40px
-            margin-top: 20px
-            float: left
-
-    div.navigation-panel
-      background: white
+    //-
+    // Begin Mobile Navigation
+    nav.mobile
       display: block
-      overflow: hidden
-      height: 0px
-      width: 100%
-      transition: height .3s
-      float: left
+      margin-top: -20px
+      padding: 0
 
-      &.opened
-        min-height: 290px
-
-      section.main-menu
-        padding-top: 30px
-
-        ul.tier1
+      div.user-links
+        ul
+          list-style-type: none
           padding: 0
           margin: 0
 
           li
-            display: block
-            margin: 0 0
-            padding: 0 0 10px 10px
-            text-align: left
+            float: left
+            width: 100%
+            padding: 0
+            margin: 0
 
-            a
-              text-decoration: none
-              color: $grey-darker
-              opacity: .7
-              border-bottom: 1px solid $grey-lighter
-              font-size: 20px
+            &.opened
+              height: 100%
+              background-color: $white
 
-              &:hover
-                opacity: 1
+            img.hamburger
+              width: 40px
+              height: 40px
+              margin-top: 20px
+              float: left
 
-      section.user-actions
-        padding-top: 30px
-        text-align: left
+      div.navigation-panel
+        background: white
+        display: block
+        overflow: hidden
+        height: 0px
+        width: 100%
+        transition: height .3s
+        float: left
 
-        a
-          text-decoration: none
-          color: $grey-darker
-          opacity: .7
-          padding: 0 0 0 10px
-          margin-bottom: 10px
-          font-size: 20px
+        &.opened
+          min-height: 290px
 
-          &:hover
-            opacity: 1
+        section.main-menu
+          padding-top: 30px
+
+          ul.tier1
+            padding: 0
+            margin: 0
+
+            li
+              display: block
+              margin: 0 0
+              padding: 0 0 10px 10px
+              text-align: left
+
+              a
+                text-decoration: none
+                color: $grey-darker
+                opacity: .7
+                border-bottom: 1px solid $grey-lighter
+                font-size: 20px
+
+                &:hover
+                  opacity: 1
+
+        section.user-actions
+          padding-top: 30px
+          text-align: left
+
+          a
+            text-decoration: none
+            color: $grey-darker
+            opacity: .7
+            padding: 0 0 0 10px
+            margin-bottom: 10px
+            font-size: 20px
+
+            &:hover
+              opacity: 1

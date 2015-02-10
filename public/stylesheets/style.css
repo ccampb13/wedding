@@ -315,6 +315,9 @@ header div ul.nav-bar li a {
   text-transform: uppercase;
   margin-top: 5px;
 }
+header nav.mobile {
+  display: none;
+}
 @media screen and (min-width: 768px) and (max-width: 990px) {
   header div ul.nav-bar li {
     margin: 0px 20px;
@@ -324,37 +327,38 @@ header div ul.nav-bar li a {
   header {
     min-height: 0;
   }
-  header ul.nav-bar {
+  header div ul.nav-bar {
     display: none;
     padding: 0;
     margin: 0;
   }
-  nav.mobile {
+  header nav.mobile {
+    display: block;
     margin-top: -20px;
     padding: 0;
   }
-  nav.mobile div.user-links ul {
+  header nav.mobile div.user-links ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
-  nav.mobile div.user-links ul li {
+  header nav.mobile div.user-links ul li {
     float: left;
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  nav.mobile div.user-links ul li.opened {
+  header nav.mobile div.user-links ul li.opened {
     height: 100%;
     background-color: #fff;
   }
-  nav.mobile div.user-links ul li img.hamburger {
+  header nav.mobile div.user-links ul li img.hamburger {
     width: 40px;
     height: 40px;
     margin-top: 20px;
     float: left;
   }
-  nav.mobile div.navigation-panel {
+  header nav.mobile div.navigation-panel {
     background: #fff;
     display: block;
     overflow: hidden;
@@ -363,37 +367,37 @@ header div ul.nav-bar li a {
     transition: height 0.3s;
     float: left;
   }
-  nav.mobile div.navigation-panel.opened {
+  header nav.mobile div.navigation-panel.opened {
     min-height: 290px;
   }
-  nav.mobile div.navigation-panel section.main-menu {
+  header nav.mobile div.navigation-panel section.main-menu {
     padding-top: 30px;
   }
-  nav.mobile div.navigation-panel section.main-menu ul.tier1 {
+  header nav.mobile div.navigation-panel section.main-menu ul.tier1 {
     padding: 0;
     margin: 0;
   }
-  nav.mobile div.navigation-panel section.main-menu ul.tier1 li {
+  header nav.mobile div.navigation-panel section.main-menu ul.tier1 li {
     display: block;
     margin: 0 0;
     padding: 0 0 10px 10px;
     text-align: left;
   }
-  nav.mobile div.navigation-panel section.main-menu ul.tier1 li a {
+  header nav.mobile div.navigation-panel section.main-menu ul.tier1 li a {
     text-decoration: none;
     color: #313131;
     opacity: 0.7;
     border-bottom: 1px solid #8f8f8f;
     font-size: 20px;
   }
-  nav.mobile div.navigation-panel section.main-menu ul.tier1 li a:hover {
+  header nav.mobile div.navigation-panel section.main-menu ul.tier1 li a:hover {
     opacity: 1;
   }
-  nav.mobile div.navigation-panel section.user-actions {
+  header nav.mobile div.navigation-panel section.user-actions {
     padding-top: 30px;
     text-align: left;
   }
-  nav.mobile div.navigation-panel section.user-actions a {
+  header nav.mobile div.navigation-panel section.user-actions a {
     text-decoration: none;
     color: #313131;
     opacity: 0.7;
@@ -401,7 +405,7 @@ header div ul.nav-bar li a {
     margin-bottom: 10px;
     font-size: 20px;
   }
-  nav.mobile div.navigation-panel section.user-actions a:hover {
+  header nav.mobile div.navigation-panel section.user-actions a:hover {
     opacity: 1;
   }
 }
