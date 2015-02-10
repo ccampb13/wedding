@@ -23,4 +23,10 @@
   };
 
   toggle();
+
+  // function toggleNashville() {
+  //   $('"button"').on('click', function(e) {
+  //     $("p").toggleClass('active');
+  //   });
+  // };
 })();

@@ -1,12 +1,65 @@
 section.nashville
-  padding-top: 200px
+  padding: 50px 0 50px
   width: 100%
-  background-color: rgba(black, 0.85)
-  background-image: url('../images/nashville.jpg')
+  background-color: $grey-darker
 
-  h1
-    color: white
+  div.center
+    article.headliners
+      text-align: center
 
-  // div#content-container
-  //   min-height: 200px
-  //   background-color: red
+      h1
+        // color: $goldenrod
+        color: $white
+        margin: 10px
+
+      ul
+        padding: 0
+        margin: 0
+
+        li
+          list-style-type: none
+          display: inline-block
+          margin: 5px
+
+          a
+            text-decoration: none
+            color: $white
+
+            span
+              margin-left: 5px
+              color: rgba($grey-lighter, .5)
+
+            &.active
+              border-bottom: 1px solid $white
+
+    div#content-container
+      min-height: 200px
+      text-align: center
+
+      ul
+        padding: 0
+        margin: 0 auto
+
+        li
+          list-style-type: none
+          display: inline-block
+
+          article
+            background-color: $white
+            display: inline-block
+            margin: 20px
+            border-radius: 4px
+            min-width: 250px
+            height: auto
+            padding: 2%
+            text-align: left
+
+            h6
+              font-weight: bold
+              text-align: left
+
+            address
+              font-size: 12px
+
+            p
+              font-size: 14px

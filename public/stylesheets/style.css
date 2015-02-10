@@ -203,10 +203,11 @@ section {
 }
 section.main-image {
   width: 100%;
-  background-image: url("../images/summer.jpg");
+  background-image: url("../images/photo-booth.jpg");
   background-color: #191919;
 }
 section.main-image h1 {
+  margin-top: 40%;
   color: #fff;
   width: 100%;
   position: absolute;
@@ -302,7 +303,6 @@ header div ul.nav-bar {
   width: 100%;
   margin: 0px auto;
   padding: 20px 0 20px;
-  position: fixed;
   list-style-type: none;
   background-color: #fff;
 }
@@ -413,13 +413,68 @@ header nav.mobile {
   }
 }
 section.nashville {
-  padding-top: 200px;
+  padding: 50px 0 50px;
   width: 100%;
-  background-color: rgba(0,0,0,0.85);
-  background-image: url("../images/nashville.jpg");
+  background-color: #313131;
 }
-section.nashville h1 {
+section.nashville div.center article.headliners {
+  text-align: center;
+}
+section.nashville div.center article.headliners h1 {
   color: #fff;
+  margin: 10px;
+}
+section.nashville div.center article.headliners ul {
+  padding: 0;
+  margin: 0;
+}
+section.nashville div.center article.headliners ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px;
+}
+section.nashville div.center article.headliners ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+section.nashville div.center article.headliners ul li a span {
+  margin-left: 5px;
+  color: rgba(143,143,143,0.5);
+}
+section.nashville div.center article.headliners ul li a.active {
+  border-bottom: 1px solid #fff;
+}
+section.nashville div.center div#content-container {
+  min-height: 200px;
+  text-align: center;
+}
+section.nashville div.center div#content-container ul {
+  padding: 0;
+  margin: 0 auto;
+}
+section.nashville div.center div#content-container ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+section.nashville div.center div#content-container ul li article {
+  background-color: #fff;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 4px;
+  min-width: 250px;
+  height: auto;
+  padding: 2%;
+  text-align: left;
+}
+section.nashville div.center div#content-container ul li article h6 {
+  font-weight: bold;
+  text-align: left;
+}
+section.nashville div.center div#content-container ul li article address {
+  font-size: 12px;
+}
+section.nashville div.center div#content-container ul li article p {
+  font-size: 14px;
 }
 section.party {
   padding-top: 200px;
@@ -444,48 +499,59 @@ section.people div.center article.opening-statement h6 {
   text-align: left;
 }
 section.people div.center article.profiles {
-  margin-top: 70px;
+  margin-top: 30px;
 }
-section.people div.center article.profiles figure {
+section.people div.center article.profiles ul {
+  display: table;
+  table-layout: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+section.people div.center article.profiles ul > * {
+  display: table-cell;
+}
+section.people div.center article.profiles ul li {
+  list-style-type: none;
   display: inline-block;
+  margin: 1%;
+  padding: 2%;
+}
+section.people div.center article.profiles ul li figure {
   width: 300px;
-  min-height: 620px;
-  margin: 10px 20px;
-  overflow: hidden;
+  padding: 0;
+  margin: 0;
   text-align: center;
+  display: block;
+  overflow: hidden;
 }
-section.people div.center article.profiles figure img.profile {
+section.people div.center article.profiles ul li figure img.profile {
   width: 300px;
-  height: auto;
+  height: 100%;
   border-radius: 4px;
-  border: 1px solid #8f8f8f;
 }
-section.people div.center article.profiles figure h5 {
-  display: inline-block;
-  margin-bottom: 5px;
-}
-section.people div.center article.profiles figure hr {
+section.people div.center article.profiles ul li figure hr {
   margin-top: 3.2%;
   color: rgba(0,0,0,0.2);
   width: 20%;
 }
-section.people div.center article.profiles figure p {
+section.people div.center article.profiles ul li figure p {
   font-size: 14px;
   text-align: left;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  section.people article.profiles figure {
+  section.people article.profiles ul li figure {
     padding: 0;
     width: 500px;
     margin-top: 20px;
   }
-  section.people article.profiles figure img.profile {
+  section.people article.profiles ul li figure img.profile {
     width: 100%;
     height: auto;
   }
 }
 @media screen and (max-width: 479px) {
-  section.people article.profiles figure {
+  section.people article.profiles ul li figure {
     width: 80%;
     margin: 0 auto;
   }

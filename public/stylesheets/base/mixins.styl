@@ -10,3 +10,25 @@ navigation-list()
 
     &:last-child
       margin-right: 0px
+
+dev-mode()
+  > *
+    border: 1px solid green
+  > * > *
+    border: 1px solid tomato
+  > * > * > *
+    border: 1px solid DeepSkyBlue
+  > * > * > * > *
+    border: 1px solid DeepPink
+  > * > * > * > * > *
+    border: 1px solid MediumSlateBlue
+
+tl($layoutType)
+  display: table
+  table-layout: $layoutType  //fixed or auto
+  margin: 0
+  padding: 0
+  width: 100%
+
+  > *
+    display: table-cell
