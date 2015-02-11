@@ -424,6 +424,10 @@ section.nashville div.center article.headliners h1 {
   color: #fff;
   margin: 10px;
 }
+section.nashville div.center article.headliners hr {
+  color: rgba(0,0,0,0.2);
+  width: 20%;
+}
 section.nashville div.center article.headliners ul {
   padding: 0;
   margin: 0;
@@ -484,6 +488,10 @@ section.party {
 }
 section.party div.center article.events {
   text-align: center;
+}
+section.party div.center article.events hr {
+  color: rgba(0,0,0,0.2);
+  width: 20%;
 }
 section.party div.center article.events ul {
   padding: 0;
@@ -594,6 +602,11 @@ section.bridesmaids div.center article.party {
 section.bridesmaids div.center article.party h2 {
   color: #313131;
 }
+section.bridesmaids div.center article.party hr {
+  margin-top: 3.2%;
+  color: rgba(0,0,0,0.2);
+  width: 20%;
+}
 section.bridesmaids div.center article.party ul {
   padding: 0;
   margin: 0;
@@ -671,6 +684,11 @@ section.groomsmen div.center article.party {
 }
 section.groomsmen div.center article.party h2 {
   color: #313131;
+  margin-bottom: 0;
+}
+section.groomsmen div.center article.party hr {
+  color: rgba(0,0,0,0.2);
+  width: 20%;
 }
 section.groomsmen div.center article.party ul {
   padding: 0;
