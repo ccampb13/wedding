@@ -246,6 +246,15 @@ section.hero article h1 {
     background-size: 350% auto;
     background-position: center top;
   }
+  section.hero article {
+    height: auto;
+  }
+  section.hero article div.center {
+    margin-top: 220px;
+  }
+  section.hero article div.center h1 {
+    font-size: 22px;
+  }
 }
 section.cd-fixed-bg {
   min-height: 100vh;
@@ -325,6 +334,9 @@ footer p span {
   footer #mc_embed_signup .button {
     background-color: #313131;
     -webkit-appearance: none;
+  }
+  footer p {
+    font-size: 12px;
   }
 }
 header {
