@@ -639,7 +639,7 @@ section.people div.center article.profiles ul li figure p {
   }
 }
 section.bridesmaids {
-  padding: 50px 0 50px;
+  padding: 50px 0 10px;
   width: 100%;
   background-color: #ebebeb;
 }
@@ -694,12 +694,17 @@ section.bridesmaids div#bridesmaids-container article {
 section.bridesmaids div#bridesmaids-container article figure {
   position: absolute;
   top: calc(50% - 110px);
-  left: 0;
+  left: 2%;
   width: 300px;
   padding: 0;
   margin: 0;
   display: block;
   overflow: hidden;
+}
+section.bridesmaids div#bridesmaids-container article figure img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 section.bridesmaids div#bridesmaids-container article h4,
 section.bridesmaids div#bridesmaids-container article p {
