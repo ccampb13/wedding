@@ -196,21 +196,56 @@ a {
 section {
   padding-top: 70px;
 }
-@media screen and (max-width:767px) {
-  section {
-    padding-top: 20px;
-  }
-}
-section.main-image {
+section.hero {
   width: 100%;
-  background-image: url("../images/photo-booth.jpg");
-  background-color: #191919;
+  position: relative;
+  padding-top: 20px;
+  height: 100vh;
+  min-height: 650px;
 }
-section.main-image h1 {
-  margin-top: 40%;
-  color: #fff;
+section.hero div#crossfade {
+  padding: 0;
+  margin: 0;
   width: 100%;
   position: absolute;
+  background-color: #191919;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+section.hero div#crossfade figure {
+  position: absolute;
+  width: 100%;
+  background-image: url("../images/photo-booth.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  min-height: 650px;
+  margin: 0;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+section.hero div#crossfade figure.active {
+  z-index: 3;
+}
+section.hero article {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  height: 87vh;
+}
+section.hero article h1 {
+  color: #fff;
+}
+@media screen and (max-width:767px) {
+  section.hero div#crossfade figure {
+    background-attachment: scroll;
+    background-size: 350% auto;
+    background-position: center top;
+  }
 }
 section.cd-fixed-bg {
   min-height: 100vh;
