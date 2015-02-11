@@ -781,13 +781,18 @@ section.groomsmen div#groomsmen-container article {
 }
 section.groomsmen div#groomsmen-container article figure {
   position: absolute;
-  top: calc(50% - 110px);
-  left: 0;
+  top: calc(50% - 100px);
+  left: 2%;
   width: 300px;
   padding: 0;
   margin: 0;
   display: block;
   overflow: hidden;
+}
+section.groomsmen div#groomsmen-container article figure img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 section.groomsmen div#groomsmen-container article h4,
 section.groomsmen div#groomsmen-container article p {
