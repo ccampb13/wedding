@@ -436,6 +436,7 @@ section.nashville div.center article.headliners ul li {
 section.nashville div.center article.headliners ul li a {
   text-decoration: none;
   color: #fff;
+  opacity: 0.5;
 }
 section.nashville div.center article.headliners ul li a span {
   margin-left: 5px;
@@ -443,6 +444,7 @@ section.nashville div.center article.headliners ul li a span {
 }
 section.nashville div.center article.headliners ul li a.active {
   border-bottom: 1px solid #fff;
+  opacity: 1;
 }
 section.nashville div.center div#content-container {
   min-height: 200px;
@@ -479,7 +481,6 @@ section.nashville div.center div#content-container ul li article p {
 section.party {
   padding-top: 50px;
   width: 100%;
-  height: auto;
 }
 section.party div.center article.events {
   text-align: center;
@@ -496,10 +497,15 @@ section.party div.center article.events ul li {
 section.party div.center article.events ul li a {
   text-decoration: none;
   color: #313131;
+  opacity: 0.5;
 }
 section.party div.center article.events ul li a span {
   margin-left: 5px;
   color: rgba(143,143,143,0.5);
+}
+section.party div.center article.events ul li a.active {
+  border-bottom: 1px solid #313131;
+  opacity: 1;
 }
 section.party div#party-container {
   border: 1px solid #313131;
@@ -600,10 +606,15 @@ section.bridesmaids div.center article.party ul li {
 section.bridesmaids div.center article.party ul li a {
   text-decoration: none;
   color: #313131;
+  opacity: 0.5;
 }
 section.bridesmaids div.center article.party ul li a span {
   margin-left: 5px;
   color: rgba(143,143,143,0.5);
+}
+section.bridesmaids div.center article.party ul li a.active {
+  border-bottom: 1px solid #313131;
+  opacity: 1;
 }
 section.bridesmaids div#bridesmaids-container {
   min-height: 200px;
@@ -642,10 +653,15 @@ section.groomsmen div.center article.party ul li {
 section.groomsmen div.center article.party ul li a {
   text-decoration: none;
   color: #313131;
+  opacity: 0.5;
 }
 section.groomsmen div.center article.party ul li a span {
   margin-left: 5px;
   color: rgba(143,143,143,0.5);
+}
+section.groomsmen div.center article.party ul li a.active {
+  border-bottom: 1px solid #313131;
+  opacity: 1;
 }
 section.groomsmen div#groomsmen-container {
   min-height: 200px;

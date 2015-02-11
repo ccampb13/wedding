@@ -5,6 +5,10 @@
 
   function init(){
     mobileNavigation();
+    toggleNashville();
+    toggleBridesmaids();
+    toggleGroomsmen();
+    toggleParty();
   }
 
   function mobileNavigation() {
@@ -24,9 +28,31 @@
 
   toggle();
 
-  // function toggleNashville() {
-  //   $('"button"').on('click', function(e) {
-  //     $("p").toggleClass('active');
-  //   });
-  // };
+  function toggleNashville() {
+    $("#where a").click(function(){
+      $('#where a.active').not(this).removeClass('active');
+      $(this).toggleClass('active');
+    })
+  };
+
+  function toggleBridesmaids(){
+    $("#who a").click(function(){
+      $('#who a.active').not(this).removeClass('active');
+      $(this).toggleClass('active');
+    })
+  };
+
+  function toggleGroomsmen(){
+    $("#him a").click(function(){
+      $('#him a.active').not(this).removeClass('active');
+      $(this).toggleClass('active');
+    })
+  };
+
+  function toggleParty(){
+    $('#when a').click(function(){
+      $('#when a.active').not(this).removeClass('active');
+      $(this).toggleClass('active');
+    })
+  };
 })();
