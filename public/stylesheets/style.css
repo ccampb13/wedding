@@ -617,18 +617,49 @@ section.bridesmaids div.center article.party ul li a.active {
   opacity: 1;
 }
 section.bridesmaids div#bridesmaids-container {
-  min-height: 200px;
+  min-height: 400px;
   text-align: center;
 }
 section.bridesmaids div#bridesmaids-container article {
   background-color: #fff;
   display: inline-block;
-  margin: 20px;
+  margin: 20px auto;
   border-radius: 4px;
-  min-width: 250px;
-  height: auto;
+  width: 50%;
   padding: 2%;
   text-align: left;
+  height: auto;
+  position: relative;
+}
+section.bridesmaids div#bridesmaids-container article figure {
+  position: absolute;
+  top: calc(50% - 110px);
+  left: 0;
+  width: 300px;
+  padding: 0;
+  margin: 0;
+  display: block;
+  overflow: hidden;
+}
+section.bridesmaids div#bridesmaids-container article h4,
+section.bridesmaids div#bridesmaids-container article p {
+  width: 70%;
+  float: right;
+}
+section.bridesmaids div#bridesmaids-container article h4 {
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  section.bridesmaids div#bridesmaids-container article {
+    width: 80%;
+  }
+  section.bridesmaids div#bridesmaids-container article figure {
+    display: none;
+  }
+  section.bridesmaids div#bridesmaids-container article h4,
+  section.bridesmaids div#bridesmaids-container article p {
+    width: 100%;
+  }
 }
 section.groomsmen {
   padding: 10px 0 50px;
@@ -664,18 +695,49 @@ section.groomsmen div.center article.party ul li a.active {
   opacity: 1;
 }
 section.groomsmen div#groomsmen-container {
-  min-height: 200px;
+  min-height: 400px;
   text-align: center;
 }
 section.groomsmen div#groomsmen-container article {
   background-color: #fff;
   display: inline-block;
-  margin: 20px;
+  margin: 20px auto;
   border-radius: 4px;
-  min-width: 250px;
-  height: auto;
+  width: 50%;
   padding: 2%;
   text-align: left;
+  height: auto;
+  position: relative;
+}
+section.groomsmen div#groomsmen-container article figure {
+  position: absolute;
+  top: calc(50% - 110px);
+  left: 0;
+  width: 300px;
+  padding: 0;
+  margin: 0;
+  display: block;
+  overflow: hidden;
+}
+section.groomsmen div#groomsmen-container article h4,
+section.groomsmen div#groomsmen-container article p {
+  width: 70%;
+  float: right;
+}
+section.groomsmen div#groomsmen-container article h4 {
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  section.groomsmen div#groomsmen-container article {
+    width: 80%;
+  }
+  section.groomsmen div#groomsmen-container article figure {
+    display: none;
+  }
+  section.groomsmen div#groomsmen-container article h4,
+  section.groomsmen div#groomsmen-container article p {
+    width: 100%;
+  }
 }
 section.registry {
   padding-bottom: 40px;
