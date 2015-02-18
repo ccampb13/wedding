@@ -599,13 +599,16 @@ section.people div.center article.profiles ul li {
   margin: 1%;
   padding: 2%;
 }
+section.people div.center article.profiles ul li:last-child {
+  padding-top: 0;
+  margin-top: 0;
+}
 section.people div.center article.profiles ul li figure {
   width: 300px;
   padding: 0;
   margin: 0;
   text-align: center;
   display: block;
-  overflow: hidden;
 }
 section.people div.center article.profiles ul li figure img.profile {
   width: 300px;
