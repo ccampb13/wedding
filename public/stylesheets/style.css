@@ -514,8 +514,8 @@ section.nashville div.center div#content-container ul li article {
   display: inline-block;
   margin: 20px;
   border-radius: 4px;
-  min-width: 250px;
-  height: auto;
+  max-width: 250px;
+  height: 100%;
   padding: 2%;
   text-align: left;
 }
