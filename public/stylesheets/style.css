@@ -240,6 +240,22 @@ section.hero article {
 section.hero article h1 {
   color: #fff;
 }
+@media screen and (min-width:768px) and (max-width:1140px) {
+  section.hero div#crossfade figure {
+    background-attachment: scroll;
+    background-size: 200% auto;
+    background-position: center top;
+  }
+  section.hero article {
+    height: auto;
+  }
+  section.hero article div.center {
+    margin-top: 220px;
+  }
+  section.hero article div.center h1 {
+    font-size: 22px;
+  }
+}
 @media screen and (max-width:767px) {
   section.hero div#crossfade figure {
     background-attachment: scroll;
@@ -306,6 +322,9 @@ footer .email {
   font-size: 16px;
   text-align: center;
 }
+footer .button {
+  -webkit-appearance: none;
+}
 footer p {
   font-size: 16px;
   color: #8f8f8f;
@@ -330,10 +349,6 @@ footer p span {
   footer #mc_embed_signup .email,
   footer #mc_embed_signup .button {
     margin-top: 10px;
-  }
-  footer #mc_embed_signup .button {
-    background-color: #313131;
-    -webkit-appearance: none;
   }
   footer p {
     font-size: 12px;
@@ -565,6 +580,10 @@ section.party div.center article.events ul li a.active {
 section.party div#party-container {
   border: 1px solid #313131;
   min-height: 200px;
+  margin: 4% 0;
+}
+section.party div#party-container article.event-info {
+  padding: 4%;
 }
 section.people {
   padding-top: 30px;
@@ -609,6 +628,7 @@ section.people div.center article.profiles ul li figure {
   margin: 0;
   text-align: center;
   display: block;
+  overflow: hidden;
 }
 section.people div.center article.profiles ul li figure img.profile {
   width: 300px;
@@ -717,6 +737,11 @@ section.bridesmaids div#bridesmaids-container article p {
 section.bridesmaids div#bridesmaids-container article h4 {
   text-align: left;
 }
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  section.bridesmaids div#bridesmaids-container article {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 767px) {
   section.bridesmaids div#bridesmaids-container article {
     width: 80%;
@@ -804,6 +829,11 @@ section.groomsmen div#groomsmen-container article p {
 }
 section.groomsmen div#groomsmen-container article h4 {
   text-align: left;
+}
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  section.groomsmen div#groomsmen-container article {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 767px) {
   section.groomsmen div#groomsmen-container article {

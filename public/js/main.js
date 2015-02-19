@@ -30,29 +30,37 @@
 
   function toggleNashville() {
     $("#where a").click(function(){
-      $('#where a.active').not(this).removeClass('active');
-      $(this).toggleClass('active');
+      if(!$(this).hasClass('active')) {
+        $('#where a.active').removeClass('active');
+        $(this).toggleClass('active');
+      };
     })
   };
 
   function toggleBridesmaids(){
     $("#who a").click(function(){
-      $('#who a.active').not(this).removeClass('active');
-      $(this).toggleClass('active');
+      if(!$(this).hasClass('active')) {
+        $('#who a.active').removeClass('active');
+        $(this).toggleClass('active');
+      };
     })
   };
 
   function toggleGroomsmen(){
     $("#him a").click(function(){
-      $('#him a.active').not(this).removeClass('active');
-      $(this).toggleClass('active');
+      if(!$(this).hasClass('active')) {
+        $('#him a.active').removeClass('active');
+        $(this).toggleClass('active');
+      };
     })
   };
 
   function toggleParty(){
     $('#when a').click(function(){
-      $('#when a.active').not(this).removeClass('active');
-      $(this).toggleClass('active');
+      if(!$(this).hasClass('active')) {
+        $('#when a.active').removeClass('active');
+        $(this).toggleClass('active');
+      };
     })
   };
 })();
