@@ -476,7 +476,6 @@ header nav.mobile {
 }
 section.nashville {
   padding: 50px 0 50px;
-  width: 100%;
   background-color: #313131;
 }
 section.nashville div.center article.headliners {
@@ -513,7 +512,6 @@ section.nashville div.center article.headliners ul li a.active {
   opacity: 1;
 }
 section.nashville div.center div#content-container {
-  min-height: 200px;
   text-align: center;
 }
 section.nashville div.center div#content-container ul {
@@ -522,21 +520,21 @@ section.nashville div.center div#content-container ul {
 }
 section.nashville div.center div#content-container ul li {
   list-style-type: none;
-  display: inline-block;
 }
 section.nashville div.center div#content-container ul li article {
   background-color: #fff;
   display: inline-block;
+  width: 250px;
+  height: auto;
   margin: 20px;
   border-radius: 4px;
-  max-width: 250px;
-  height: 100%;
   padding: 2%;
   text-align: left;
 }
 section.nashville div.center div#content-container ul li article h6 {
   font-weight: bold;
   text-align: left;
+  letter-spacing: 0.05em;
 }
 section.nashville div.center div#content-container ul li article address {
   font-size: 12px;
