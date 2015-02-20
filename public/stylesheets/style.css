@@ -240,6 +240,9 @@ section.hero article {
 section.hero article h1 {
   color: #fff;
 }
+section.hero article h1 span {
+  display: block;
+}
 @media screen and (min-width:768px) and (max-width:1140px) {
   section.hero div#crossfade figure {
     background-attachment: scroll;
@@ -583,6 +586,9 @@ section.party div#party-container {
 section.party div#party-container article.event-info {
   padding: 4%;
 }
+section.party div#party-container article.event-info p.five-points {
+  font-weight: bold;
+}
 section.people {
   padding-top: 30px;
 }
@@ -717,6 +723,7 @@ section.bridesmaids div#bridesmaids-container article figure {
   top: calc(50% - 110px);
   left: 2%;
   width: 300px;
+  width: 100px;
   padding: 0;
   margin: 0;
   display: block;
@@ -729,8 +736,9 @@ section.bridesmaids div#bridesmaids-container article figure img {
 }
 section.bridesmaids div#bridesmaids-container article h4,
 section.bridesmaids div#bridesmaids-container article p {
-  width: 70%;
+  width: 100%;
   float: right;
+  margin: 5px;
 }
 section.bridesmaids div#bridesmaids-container article h4 {
   text-align: left;
@@ -822,8 +830,9 @@ section.groomsmen div#groomsmen-container article figure img {
 }
 section.groomsmen div#groomsmen-container article h4,
 section.groomsmen div#groomsmen-container article p {
-  width: 70%;
+  width: 100%;
   float: right;
+  margin: 5px;
 }
 section.groomsmen div#groomsmen-container article h4 {
   text-align: left;
