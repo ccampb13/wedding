@@ -364,7 +364,7 @@ header {
   position: relative;
   z-index: 100000;
 }
-header div.header-container.headroom {
+header div.header-container.headroom-nav {
   position: fixed;
   top: 0;
   left: 0;

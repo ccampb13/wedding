@@ -30,8 +30,7 @@
 
 	function stickyNav() {
   	// initiate headroom script
-  	$(".headroom").headroom({
-      // console.log('headroom');
+  	$(".headroom-nav").headroom({
 	    // vertical offset in px before element is first unpinned
 	    offset : 0,
 	    // scroll tolerance in px before state changes
