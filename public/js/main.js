@@ -23,8 +23,8 @@
 	    // tolerance : 0,
 	    // or you can specify tolerance individually for up/down scroll
 	    tolerance : {
-	        up : 10,
-	        down : 10
+        up : 10,
+        down : 10
 	    }
    	});
   };
