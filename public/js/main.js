@@ -9,7 +9,40 @@
     toggleBridesmaids();
     toggleGroomsmen();
     toggleParty();
+    stickyNav();
+    smoothScroll();
   }
+
+	 function stickyNav() {
+  	// initiate headroom script
+  	$(".headroom").headroom({
+      // console.log('headroom');
+	    // vertical offset in px before element is first unpinned
+	    offset : 0,
+	    // scroll tolerance in px before state changes
+	    // tolerance : 0,
+	    // or you can specify tolerance individually for up/down scroll
+	    tolerance : {
+	        up : 10,
+	        down : 10
+	    }
+   	});
+  };
+
+  function smoothScroll() {
+    $('.smooth-scroll a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 500, 'swing', function () {
+          window.location.hash = target;
+      });
+    });
+  };
 
   function mobileNavigation() {
 
@@ -26,7 +59,7 @@
     });
   };
 
-  toggle();
+  // toggle();
 
   function toggleNashville() {
     $("#where a").click(function(){
