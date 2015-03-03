@@ -418,6 +418,21 @@ header nav.mobile {
     margin-top: -20px;
     padding: 0;
   }
+  header nav.mobile div.mobile-header-container.mobile-headroom-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  header nav.mobile div.mobile-header-container.headroom--unpinned {
+    top: -200px;
+  }
+  header nav.mobile div.mobile-header-container.headroom--pinned {
+    top: 0;
+    z-index: 50;
+    background-color: #fff;
+  }
   header nav.mobile div.user-links ul {
     list-style-type: none;
     padding: 0;
@@ -431,13 +446,18 @@ header nav.mobile {
   }
   header nav.mobile div.user-links ul li.opened {
     height: 100%;
-    background-color: #fff;
+    background-color: transparent;
+  }
+  header nav.mobile div.user-links ul li.opened img.hamburger {
+    display: none;
   }
   header nav.mobile div.user-links ul li img.hamburger {
     width: 40px;
     height: 40px;
-    margin-top: 20px;
+    margin-top: 5px;
     float: left;
+    margin-left: -5px;
+    padding: 0;
     z-index: 1000;
   }
   header nav.mobile div.navigation-panel {
@@ -451,6 +471,10 @@ header nav.mobile {
   }
   header nav.mobile div.navigation-panel.opened {
     min-height: 290px;
+    position: fixed;
+  }
+  header nav.mobile div.navigation-panel.closed {
+    display: none;
   }
   header nav.mobile div.navigation-panel section.main-menu {
     padding-top: 30px;

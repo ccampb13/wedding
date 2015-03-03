@@ -66,6 +66,23 @@ header
       margin-top: -20px
       padding: 0
 
+      div.mobile-header-container
+
+        &.mobile-headroom-nav
+          position: fixed
+          top: 0
+          left: 0
+          right: 0
+          transition: all .2s ease-in-out
+
+        &.headroom--unpinned
+          top: -200px
+
+        &.headroom--pinned
+          top: 0
+          z-index: 50
+          background-color: $white
+
 
       div.user-links
         ul
@@ -81,13 +98,18 @@ header
 
             &.opened
               height: 100%
-              background-color: $white
+              background-color: transparent
+
+              img.hamburger
+                display: none
 
             img.hamburger
               width: 40px
               height: 40px
-              margin-top: 20px
+              margin-top: 5px
               float: left
+              margin-left: -5px
+              padding: 0
               z-index: 1000
 
       div.navigation-panel
@@ -99,9 +121,12 @@ header
         transition: height .3s
         float: left
 
-
         &.opened
           min-height: 290px
+          position: fixed
+
+        &.closed
+          display: none
 
         section.main-menu
           padding-top: 30px

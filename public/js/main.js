@@ -35,11 +35,13 @@
 	    offset : 0,
 	    // scroll tolerance in px before state changes
 	    tolerance : 0
-	    // or you can specify tolerance individually for up/down scroll
-	    // tolerance : {
-      //     up : 10,
-      //     down : 10
-	    // }
+   	});
+
+  	$(".mobile-headroom-nav").headroom({
+	    // vertical offset in px before element is first unpinned
+	    offset : 0,
+	    // scroll tolerance in px before state changes
+	    tolerance : 0
    	});
   };
 

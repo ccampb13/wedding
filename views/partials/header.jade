@@ -12,16 +12,16 @@ block header
     //-
     //-begin mobile nav menu. only seen below 768px    
     nav.mobile#mobileNav(role='navigation')
-      div.user-links
+      div.user-links.mobile-header-container.mobile-headroom-nav
         ul
           li: img.hamburger.js-toggle-menu(src='../images/hamburger.png')
 
       //- Panel (slides out when toggled by user)
       div.navigation-panel
 
-        section.main-menu
+        section.main-menu.js-toggle-menu
           div.center
-            ul.tier1
+            ul.tier1.smooth-scroll
               li: a(href='#people') People
               li: a(href='#party') Party
               li: a(href='#nashville') Nashville
