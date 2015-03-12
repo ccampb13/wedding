@@ -643,6 +643,7 @@ section.people div.center article.opening-statement h6 {
 }
 section.people div.center article.profiles {
   margin-top: 30px;
+  overflow: hidden;
 }
 section.people div.center article.profiles ul {
   display: table;
@@ -698,9 +699,21 @@ section.people div.center article.profiles ul li figure p {
   }
 }
 @media screen and (max-width: 479px) {
-  section.people article.profiles ul li figure {
-    width: 80%;
+  section.people div.center {
+    width: 100%;
+    margin: 0;
+  }
+  section.people div.center article.opening-statement {
+    width: 90%;
+  }
+  section.people div.center article.profiles ul li {
+    margin: 0;
+    padding: 0;
+  }
+  section.people div.center article.profiles ul li figure {
+    width: 90%;
     margin: 0 auto;
+    padding: 0;
   }
 }
 section.bridesmaids {
