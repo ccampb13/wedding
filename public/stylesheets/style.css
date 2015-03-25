@@ -1020,6 +1020,89 @@ section.travel div.center p.other a {
     line-height: 1.5em !important;
   }
 }
+section.lodging {
+  background-color: #313131;
+  text-align: center;
+  padding-bottom: 70px;
+}
+section.lodging h2 {
+  color: #fff;
+}
+section.lodging hr {
+  margin-top: 3.2%;
+  color: rgba(0,0,0,0.2);
+  width: 10%;
+}
+section.lodging p {
+  color: #fff;
+}
+section.lodging div.options ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px;
+  width: 60%;
+  background-color: #fff;
+  padding: 3%;
+  border-radius: 3px;
+}
+section.lodging div.options ul h6 {
+  display: inline-block;
+  letter-spacing: 0.1em;
+  margin: 2px;
+}
+section.lodging div.options ul h6 a {
+  text-decoration: none;
+  color: #313131;
+}
+section.lodging div.options ul p {
+  color: #000;
+  margin: 2px;
+}
+section.lodging div.other-recs ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px;
+  width: 28%;
+  background-color: #fff;
+  padding: 1%;
+  border-radius: 3px;
+}
+section.lodging div.other-recs ul p.hotel {
+  color: #313131;
+  margin: 2px;
+}
+section.lodging div.other-recs ul p {
+  color: #8f8f8f;
+  margin: 2px;
+}
+@media screen and (max-width: 767px) {
+  section.lodging {
+    text-align: center;
+  }
+  section.lodging h2 {
+    font-size: 24px;
+  }
+  section.lodging div.options {
+    margin: 5px auto;
+  }
+  section.lodging div.options ul {
+    padding: 0;
+  }
+  section.lodging div.options ul li {
+    width: 90%;
+  }
+  section.lodging div.options ul li h6 {
+    font-size: 16px;
+    line-height: 1em;
+  }
+  section.lodging div.other-recs ul {
+    padding: 0;
+  }
+  section.lodging div.other-recs ul li {
+    display: block;
+    width: 95%;
+  }
+}
 .icon.animated.over-scale {
   width: 125px;
   height: 125px;

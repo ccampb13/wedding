@@ -53,3 +53,87 @@ section.travel
     text-align: left
     font-size: 16px !important
     line-height: 1.5em !important
+
+section.lodging
+  background-color: $grey-darker
+  text-align: center
+  padding-bottom: 70px
+
+  h2
+    color $white
+
+  hr
+    margin-top: 3.2%
+    color: rgba($black, .2)
+    width: 10%
+
+  p
+    color $white
+
+  div.options
+    ul
+      li
+        list-style-type: none
+        display: inline-block
+        margin: 5px
+        width 60%
+        background-color $white
+        padding 3%
+        border-radius 3px
+
+      h6
+        display inline-block
+        letter-spacing .1em
+        margin 2px
+
+        a
+          text-decoration none
+          color $grey-darker
+
+      p
+        color $black
+        margin 2px
+
+  div.other-recs
+    ul
+      li
+        list-style-type: none
+        display: inline-block
+        margin: 5px
+        width 28%
+        background-color $white
+        padding 1%
+        border-radius 3px
+
+      p.hotel
+        color $grey-darker
+        margin 2px
+
+      p
+        color $grey-lighter
+        margin 2px
+
+  @media screen and (max-width: 767px)
+    text-align center
+
+    h2
+      font-size 24px
+
+    div.options
+      margin 5px auto
+      ul
+        padding 0
+
+        li
+          width 90%
+
+          h6
+            font-size 16px
+            line-height 1em
+
+    div.other-recs
+      ul
+        padding 0
+        li
+          display block
+          width 95%
