@@ -1075,12 +1075,18 @@ section.lodging div.other-recs ul p {
   color: #8f8f8f;
   margin: 2px;
 }
+section.lodging div.airbnb p {
+  color: #fff;
+}
 @media screen and (max-width: 767px) {
   section.lodging {
     text-align: center;
   }
   section.lodging h2 {
-    font-size: 24px;
+    font-size: 18px;
+  }
+  section.lodging p {
+    text-align: left;
   }
   section.lodging div.options {
     margin: 5px auto;
@@ -1094,6 +1100,9 @@ section.lodging div.other-recs ul p {
   section.lodging div.options ul li h6 {
     font-size: 16px;
     line-height: 1em;
+  }
+  section.lodging div.other-recs p {
+    text-align: center;
   }
   section.lodging div.other-recs ul {
     padding: 0;
