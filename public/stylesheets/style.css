@@ -396,6 +396,10 @@ header div ul.nav-bar li a {
   text-transform: uppercase;
   margin-top: 5px;
 }
+header div ul.nav-bar li a:hover {
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #313131;
+}
 header nav.mobile {
   display: none;
 }
@@ -544,6 +548,10 @@ section.nashville div.center article.headliners ul li a {
   color: #fff;
   opacity: 0.5;
 }
+section.nashville div.center article.headliners ul li a:hover {
+  transition: all 0.2s ease;
+  opacity: 1;
+}
 section.nashville div.center article.headliners ul li a span {
   margin-left: 5px;
   color: rgba(143,143,143,0.5);
@@ -607,6 +615,10 @@ section.party div.center article.events ul li a {
   text-decoration: none;
   color: #313131;
   opacity: 0.5;
+}
+section.party div.center article.events ul li a:hover {
+  transition: all 0.2s ease;
+  opacity: 1;
 }
 section.party div.center article.events ul li a span {
   margin-left: 5px;
@@ -746,6 +758,10 @@ section.bridesmaids div.center article.party ul li a {
   color: #313131;
   opacity: 0.5;
 }
+section.bridesmaids div.center article.party ul li a:hover {
+  transition: all 0.2s ease;
+  opacity: 1;
+}
 section.bridesmaids div.center article.party ul li a span {
   margin-left: 5px;
   color: rgba(143,143,143,0.5);
@@ -841,6 +857,10 @@ section.groomsmen div.center article.party ul li a {
   text-decoration: none;
   color: #313131;
   opacity: 0.5;
+}
+section.groomsmen div.center article.party ul li a:hover {
+  transition: all 0.2s ease;
+  opacity: 1;
 }
 section.groomsmen div.center article.party ul li a span {
   margin-left: 5px;
