@@ -118,17 +118,19 @@ header
               z-index: 1000
 
       div.navigation-panel
-        background: white
+        background-color: rgba($black, .85)
         display: block
         overflow: hidden
         height: 0px
         width: 100%
         transition: height .3s
         float: left
+        opacity: 0
 
         &.opened
           min-height: 290px
           position: fixed
+          opacity: 1
 
         &.closed
           display: none
@@ -148,9 +150,9 @@ header
 
               a
                 text-decoration: none
-                color: $grey-darker
+                color: $white
                 opacity: .7
-                border-bottom: 1px solid $grey-lighter
+                border-bottom: 1px solid $white
                 font-size: 20px
 
                 &:hover
@@ -162,7 +164,7 @@ header
 
           a
             text-decoration: none
-            color: $grey-darker
+            color: $white
             opacity: .7
             padding: 0 0 0 10px
             margin-bottom: 10px

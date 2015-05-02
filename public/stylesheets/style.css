@@ -202,6 +202,8 @@ section.hero {
   padding-top: 20px;
   height: 100vh;
   min-height: 650px;
+  margin: 0;
+  padding: 0;
 }
 section.hero div#crossfade {
   padding: 0;
@@ -465,17 +467,19 @@ header nav.mobile {
     z-index: 1000;
   }
   header nav.mobile div.navigation-panel {
-    background: #fff;
+    background-color: rgba(0,0,0,0.85);
     display: block;
     overflow: hidden;
     height: 0px;
     width: 100%;
     transition: height 0.3s;
     float: left;
+    opacity: 0;
   }
   header nav.mobile div.navigation-panel.opened {
     min-height: 290px;
     position: fixed;
+    opacity: 1;
   }
   header nav.mobile div.navigation-panel.closed {
     display: none;
@@ -495,9 +499,9 @@ header nav.mobile {
   }
   header nav.mobile div.navigation-panel section.main-menu ul.tier1 li a {
     text-decoration: none;
-    color: #313131;
+    color: #fff;
     opacity: 0.7;
-    border-bottom: 1px solid #8f8f8f;
+    border-bottom: 1px solid #fff;
     font-size: 20px;
   }
   header nav.mobile div.navigation-panel section.main-menu ul.tier1 li a:hover {
@@ -509,7 +513,7 @@ header nav.mobile {
   }
   header nav.mobile div.navigation-panel section.user-actions a {
     text-decoration: none;
-    color: #313131;
+    color: #fff;
     opacity: 0.7;
     padding: 0 0 0 10px;
     margin-bottom: 10px;
@@ -700,6 +704,9 @@ section.people div.center article.profiles ul li figure p {
   text-align: left;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
+  section.people {
+    padding: 10px 0;
+  }
   section.people article.profiles ul li figure {
     padding: 0;
     width: 500px;
@@ -711,6 +718,9 @@ section.people div.center article.profiles ul li figure p {
   }
 }
 @media screen and (max-width: 479px) {
+  section.people {
+    padding: 10px 0;
+  }
   section.people div.center {
     width: 100%;
     margin: 0;
@@ -730,6 +740,7 @@ section.people div.center article.profiles ul li figure p {
 }
 section.bridesmaids {
   padding: 50px 0 10px;
+  margin: 0;
   width: 100%;
   background-color: #ebebeb;
 }
@@ -814,17 +825,21 @@ section.bridesmaids div#bridesmaids-container article h4 {
 @media screen and (min-width: 768px) and (max-width: 1100px) {
   section.bridesmaids div#bridesmaids-container article {
     width: 90%;
+    margin: 0;
   }
 }
 @media screen and (max-width: 767px) {
-  section.bridesmaids div#bridesmaids-container article {
-    width: 80%;
+  section.bridesmaids {
+    padding: 10px 0;
   }
-  section.bridesmaids div#bridesmaids-container article figure {
+  div#bridesmaids-container article {
+    width: 100%;
+  }
+  div#bridesmaids-container article figure {
     display: none;
   }
-  section.bridesmaids div#bridesmaids-container article h4,
-  section.bridesmaids div#bridesmaids-container article p {
+  div#bridesmaids-container article h4,
+  div#bridesmaids-container article p {
     width: 100%;
   }
 }
