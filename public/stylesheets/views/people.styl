@@ -1,6 +1,7 @@
 section.people
   padding-top: 30px
 
+
   div.center
     text-align: center
 
@@ -85,9 +86,8 @@ section.people
 
 
 section.bridesmaids
-  padding: 50px 0 10px
+  padding: 50px 0
   margin: 0
-  width: 100%
   background-color: $gallery
 
   div.center
@@ -128,73 +128,39 @@ section.bridesmaids
               border-bottom: 1px solid $grey-darker
               opacity: 1
 
-  div#bridesmaids-container
-    min-height: 400px
-    text-align: center
+    div#bridesmaids-container
+      min-height: 400px
+      text-align: center
 
-    article
-      background-color: $white
-      display: inline-block
-      margin: 20px auto
-      border-radius: 4px
-      width: 50%
-      padding: 2%
-      text-align: left
-      height: auto
-      position: relative
+      article
+        background-color: $white
+        display: inline-block
+        margin: 20px auto
+        border-radius: 4px
+        width: 60%
 
-      figure
-        position: absolute
-        top: calc(50% - 110px)
-        left: 2%
-        width: 300px
-        width: 100px
-        padding: 0
-        margin: 0
-        display: block
-        overflow: hidden
-
-        img
-          width: 200px
-          height: 200px
-          border-radius: 50%
-
-
-      h4, p
-        width: 100%
-        float: right
-        margin: 5px
-
-      h4
-        text-align: left
-        letter-spacing: .01em
+        div.copy
+          text-align: left
+          padding: 0 10px
 
 @media screen and (min-width: 768px) and (max-width: 1100px)
   section.bridesmaids
-    div#bridesmaids-container
-      article
-        width: 90%
-        margin: 0
+    div.center
+      div#bridesmaids-container
+        article
+          width: 90%
 
 @media screen and (max-width: 767px)
   section.bridesmaids
-      padding: 10px 0
-
-    div#bridesmaids-container
-      article
-        width: 100%
-
-        figure
-          display: none
-
-        h4, p
+    div.center
+      div#bridesmaids-container
+        article
           width: 100%
 
 section.groomsmen
   padding: 10px 0 50px
   width: 100%
   background-color: $gallery
-
 
   div.center
     article.party
@@ -234,63 +200,32 @@ section.groomsmen
               border-bottom: 1px solid $grey-darker
               opacity: 1
 
+    div#groomsmen-container
+      min-height: 400px
+      text-align: center
 
+      article
+        background-color: $white
+        display: inline-block
+        margin: 20px auto
+        border-radius: 4px
+        width: 60%
 
-  div#groomsmen-container
-    min-height: 400px
-    text-align: center
-
-    article
-      background-color: $white
-      display: inline-block
-      margin: 20px auto
-      border-radius: 4px
-      width: 50%
-      padding: 2%
-      text-align: left
-      height: auto
-      position: relative
-
-      figure
-        position: absolute
-        top: calc(50% - 100px)
-        left: 2%
-        width: 300px
-        padding: 0
-        margin: 0
-        display: block
-        overflow: hidden
-
-        img
-          width: 200px
-          height: 200px
-          border-radius: 50%
-
-
-      h4, p
-        width: 100%
-        float: right
-        margin: 5px
-
-      h4
-        text-align: left
-        letter-spacing: .01em
+        div.copy
+          text-align: left
+          padding: 0 10px
 
 @media screen and (min-width: 768px) and (max-width: 1100px)
   section.groomsmen
-    div#groomsmen-container
-      article
-        width: 90%
+    div.center
+      div#groomsmen-container
+        article
+          width: 90%
 
 
 @media screen and (max-width: 767px)
   section.groomsmen
-    div#groomsmen-container
-      article
-        width: 80%
-
-        figure
-          display: none
-
-        h4, p
+    div.center
+      div#groomsmen-container
+        article
           width: 100%

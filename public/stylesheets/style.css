@@ -130,7 +130,7 @@ h6 {
   color: #313131;
   font-weight: normal;
   text-align: center;
-  letter-spacing: 2.5px;
+  letter-spacing: 0.01em;
 }
 h1 {
   font-size: 54px;
@@ -739,9 +739,8 @@ section.people div.center article.profiles ul li figure p {
   }
 }
 section.bridesmaids {
-  padding: 50px 0 10px;
+  padding: 50px 0;
   margin: 0;
-  width: 100%;
   background-color: #ebebeb;
 }
 section.bridesmaids div.center article.party {
@@ -781,65 +780,28 @@ section.bridesmaids div.center article.party ul li a.active {
   border-bottom: 1px solid #313131;
   opacity: 1;
 }
-section.bridesmaids div#bridesmaids-container {
+section.bridesmaids div.center div#bridesmaids-container {
   min-height: 400px;
   text-align: center;
 }
-section.bridesmaids div#bridesmaids-container article {
+section.bridesmaids div.center div#bridesmaids-container article {
   background-color: #fff;
   display: inline-block;
   margin: 20px auto;
   border-radius: 4px;
-  width: 50%;
-  padding: 2%;
+  width: 60%;
+}
+section.bridesmaids div.center div#bridesmaids-container article div.copy {
   text-align: left;
-  height: auto;
-  position: relative;
-}
-section.bridesmaids div#bridesmaids-container article figure {
-  position: absolute;
-  top: calc(50% - 110px);
-  left: 2%;
-  width: 300px;
-  width: 100px;
-  padding: 0;
-  margin: 0;
-  display: block;
-  overflow: hidden;
-}
-section.bridesmaids div#bridesmaids-container article figure img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-section.bridesmaids div#bridesmaids-container article h4,
-section.bridesmaids div#bridesmaids-container article p {
-  width: 100%;
-  float: right;
-  margin: 5px;
-}
-section.bridesmaids div#bridesmaids-container article h4 {
-  text-align: left;
-  letter-spacing: 0.01em;
+  padding: 0 10px;
 }
 @media screen and (min-width: 768px) and (max-width: 1100px) {
-  section.bridesmaids div#bridesmaids-container article {
+  section.bridesmaids div.center div#bridesmaids-container article {
     width: 90%;
-    margin: 0;
   }
 }
 @media screen and (max-width: 767px) {
-  section.bridesmaids {
-    padding: 10px 0;
-  }
-  div#bridesmaids-container article {
-    width: 100%;
-  }
-  div#bridesmaids-container article figure {
-    display: none;
-  }
-  div#bridesmaids-container article h4,
-  div#bridesmaids-container article p {
+  section.bridesmaids div.center div#bridesmaids-container article {
     width: 100%;
   }
 }
@@ -885,60 +847,28 @@ section.groomsmen div.center article.party ul li a.active {
   border-bottom: 1px solid #313131;
   opacity: 1;
 }
-section.groomsmen div#groomsmen-container {
+section.groomsmen div.center div#groomsmen-container {
   min-height: 400px;
   text-align: center;
 }
-section.groomsmen div#groomsmen-container article {
+section.groomsmen div.center div#groomsmen-container article {
   background-color: #fff;
   display: inline-block;
   margin: 20px auto;
   border-radius: 4px;
-  width: 50%;
-  padding: 2%;
+  width: 60%;
+}
+section.groomsmen div.center div#groomsmen-container article div.copy {
   text-align: left;
-  height: auto;
-  position: relative;
-}
-section.groomsmen div#groomsmen-container article figure {
-  position: absolute;
-  top: calc(50% - 100px);
-  left: 2%;
-  width: 300px;
-  padding: 0;
-  margin: 0;
-  display: block;
-  overflow: hidden;
-}
-section.groomsmen div#groomsmen-container article figure img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-section.groomsmen div#groomsmen-container article h4,
-section.groomsmen div#groomsmen-container article p {
-  width: 100%;
-  float: right;
-  margin: 5px;
-}
-section.groomsmen div#groomsmen-container article h4 {
-  text-align: left;
-  letter-spacing: 0.01em;
+  padding: 0 10px;
 }
 @media screen and (min-width: 768px) and (max-width: 1100px) {
-  section.groomsmen div#groomsmen-container article {
+  section.groomsmen div.center div#groomsmen-container article {
     width: 90%;
   }
 }
 @media screen and (max-width: 767px) {
-  section.groomsmen div#groomsmen-container article {
-    width: 80%;
-  }
-  section.groomsmen div#groomsmen-container article figure {
-    display: none;
-  }
-  section.groomsmen div#groomsmen-container article h4,
-  section.groomsmen div#groomsmen-container article p {
+  section.groomsmen div.center div#groomsmen-container article {
     width: 100%;
   }
 }
@@ -1116,6 +1046,7 @@ section.lodging div.airbnb p {
 @media screen and (max-width: 767px) {
   section.lodging {
     text-align: center;
+    padding: 30px 0;
   }
   section.lodging h2 {
     font-size: 18px;
