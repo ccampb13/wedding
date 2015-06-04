@@ -3,18 +3,21 @@ section.registry
 
   div.center
     article.where-to-buy
-
       hr
-        margin-top: 3.2%
-        color: rgba($black, .2)
+        margin: 3.2% auto
+        color: rgba($grey-darker, .2)
         width: 10%
 
       p
-        font-size: 24px
-        color: $grey-lighter
-        line-height: 1.1em
+        max-width 80%
+        margin 0 auto
+
 
       ul.register-links
+        text-align center
+        padding: 0
+        padding-top 30px
+
         li
           display: inline-block
 
@@ -25,39 +28,21 @@ section.registry
             &:hover
               opacity: 1
 
-@media screen and (min-width: 768px) and (max-width: 1150px)
-  section.registry
-    article.where-to-buy
-      ul.register-links
-        text-align: center
+  @media screen and (max-width: 767px)
+    padding: 30px 0
 
-        li
-          display: inline-block
-          margin: 0 auto
-          a
-            margin: 0
+    div.center
+      article.where-to-buy
+        p
+          max-width 90%
 
-            img
-              width: 275px
+        ul.register-links
+          li
+            display: block
 
-@media screen and (max-width: 767px)
-  section.registry
-    article.where-to-buy
-      p
-        text-align: left
-        font-size: 16px !important
-        line-height: 1.5em !important
+            a
+              margin: 0 auto
 
-      ul.register-links
-        text-align: center
-        padding: 0
-
-        li
-          display: block
-
-          a
-            margin: 0 auto
-
-            img
-              width: 200px
-              padding-bottom: 30px
+              img
+                width: 200px
+                padding-bottom: 30px

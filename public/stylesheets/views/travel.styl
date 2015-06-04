@@ -1,15 +1,21 @@
 section.travel
+  padding 70px 0
+
   div.center
     text-align: center
+
+    h2
+      margin-top 0
+
     hr
-      margin-top: 3.2%
+      margin: 3.2% auto
       color: rgba($black, .2)
       width: 10%
 
     article
       display: inline-block
       height: 270px
-      margin: 20px
+      margin: 10px
 
       figure.icon
         img
@@ -28,107 +34,114 @@ section.travel
     h6
       text-transform: uppercase
       font-size: 24px
-      margin: 5px
-      margin-top: 50px
+      margin 50px 5px 16px
 
     p.other
-      font-size: 24px
-      color: $grey-lighter
-      line-height: 1.1em
       text-align: left
+      max-width 80%
+      margin 0 auto 16px
 
       a
-        color: $grey-darker
+        border-bottom 1px dotted $grey-darker
         text-decoration: none
 
 
-@media screen and (max-width: 767px)
+  @media screen and (max-width: 767px)
+    div.center
+      article
+        a.button
+          background-color: $white
+          color: $grey-darker
+          border: 1px solid $grey-darker
 
-  a.button
-    background-color: $white
-    color: $grey-darker
-    border: 1px solid $grey-darker
-
-  p.other
-    text-align: left
-    font-size: 16px !important
-    line-height: 1.5em !important
+        p.other
+          text-align: left
+          max-width 90%
 
 section.lodging
   background-color: $grey-darker
   text-align: center
-  padding-bottom: 70px
+  padding: 70px 0
 
-  h2
-    color $white
+  div.center
+    div.copy
+      h2
+        color $white
+        margin-top 0
 
-  hr
-    margin-top: 3.2%
-    color: rgba($black, .2)
-    width: 10%
+      hr
+        margin: 3.2% auto
+        color: rgba($black, .2)
+        width: 10%
 
-  p
-    color $white
+      p
+        color $white
+        max-width 80%
+        margin 0 auto
 
-  div.options
-    ul
-      li
-        list-style-type: none
-        display: inline-block
-        margin: 5px
-        width 60%
-        background-color $white
-        padding 3%
-        border-radius 3px
+    div.options
+      ul
+        li
+          list-style-type: none
+          display: inline-block
+          margin: 5px
+          width 60%
+          background-color $white
+          padding 3%
+          border-radius 3px
 
-      h6
-        display inline-block
-        letter-spacing .1em
-        margin 2px
+          h6
+            display inline-block
+            letter-spacing .1em
+            margin 2px
 
-        a
-          text-decoration none
+            a
+              text-decoration none
+              color $grey-darker
+
+          p
+            color $black
+            margin 2px
+
+    div.other-recs
+      ul
+        li
+          list-style-type: none
+          display: inline-block
+          margin: 5px
+          width 28%
+          background-color $white
+          padding 1%
+          border-radius 3px
+
+        p.hotel
           color $grey-darker
+          margin 2px
 
+        p
+          color $grey-lighter
+          margin 2px
+
+    div.airbnb
       p
-        color $black
-        margin 2px
-
-  div.other-recs
-    ul
-      li
-        list-style-type: none
-        display: inline-block
-        margin: 5px
-        width 28%
-        background-color $white
-        padding 1%
-        border-radius 3px
-
-      p.hotel
-        color $grey-darker
-        margin 2px
-
-      p
-        color $grey-lighter
-        margin 2px
-
-  div.airbnb
-    p
-      color $white
+        color $white
+        max-width 80%
+        margin 0 auto
 
   @media screen and (max-width: 767px)
-    text-align center
     padding 30px 0
 
-    h2
-      font-size 18px
+    div.copy
+      h2
+        font-size 18px
 
-    p
-      text-align left
+      p
+        text-align left
+        max-width 90%
 
     div.options
       margin 5px auto
+
       ul
         padding 0
 
@@ -146,4 +159,8 @@ section.lodging
         padding 0
         li
           display block
-          width 95%
+
+    div.airbnb
+      p
+        max-width 90%
+        text-align left
