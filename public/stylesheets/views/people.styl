@@ -1,5 +1,6 @@
 section.people
   padding 70px 0
+
   div.center
     text-align: center
 
@@ -94,11 +95,7 @@ section.bridesmaids
 
       h2
         color $grey-darker
-
-      hr
-        margin-top: 3.2%
-        color: rgba($black, .2)
-        width: 20%
+        margin-top 0
 
       ul
         padding: 0
@@ -127,7 +124,6 @@ section.bridesmaids
               opacity: 1
 
     div#bridesmaids-container
-      min-height: 400px
       text-align: center
 
       article
@@ -141,15 +137,13 @@ section.bridesmaids
           text-align: left
           padding: 0 10px
 
-@media screen and (min-width: 768px) and (max-width: 1100px)
-  section.bridesmaids
+  @media screen and (min-width: 768px) and (max-width: 1100px)
     div.center
       div#bridesmaids-container
         article
           width: 90%
 
-@media screen and (max-width: 767px)
-  section.bridesmaids
+  @media screen and (max-width: 767px)
     div.center
       div#bridesmaids-container
         article
@@ -157,7 +151,6 @@ section.bridesmaids
 
 section.groomsmen
   padding: 10px 0 50px
-  width: 100%
   background-color: $gallery
 
   div.center
@@ -166,11 +159,7 @@ section.groomsmen
 
       h2
         color $grey-darker
-        margin-bottom: 0
-
-      hr
-        color: rgba($black, .2)
-        width: 20%
+        margin-top: 0
 
       ul
         padding: 0
@@ -199,7 +188,6 @@ section.groomsmen
               opacity: 1
 
     div#groomsmen-container
-      min-height: 400px
       text-align: center
 
       article
@@ -213,16 +201,14 @@ section.groomsmen
           text-align: left
           padding: 0 10px
 
-@media screen and (min-width: 768px) and (max-width: 1100px)
-  section.groomsmen
+  @media screen and (min-width: 768px) and (max-width: 1100px)
     div.center
       div#groomsmen-container
         article
           width: 90%
 
 
-@media screen and (max-width: 767px)
-  section.groomsmen
+  @media screen and (max-width: 767px)
     div.center
       div#groomsmen-container
         article

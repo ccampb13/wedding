@@ -167,10 +167,6 @@ p {
   font-size: 16px;
   color: #313131;
 }
-.main section {
-  position: relative;
-  padding: 70px 0;
-}
 .center {
   position: relative;
   clear: both;
@@ -195,98 +191,8 @@ a {
   text-decoration: none;
 }
 section {
-  padding-top: 70px;
-}
-section.hero {
-  width: 100%;
   position: relative;
-  padding-top: 20px;
-  height: 100vh;
-  min-height: 650px;
-  margin: 0;
-  padding: 0;
-}
-section.hero div#crossfade {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  position: absolute;
-  background-color: #191919;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-section.hero div#crossfade figure {
-  position: absolute;
-  width: 100%;
-  background-image: url("../images/photo-booth.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  height: 100vh;
-  min-height: 650px;
-  margin: 0;
-  z-index: 1;
-  top: 0;
-  left: 0;
-}
-section.hero div#crossfade figure.active {
-  z-index: 3;
-}
-section.hero article {
-  position: absolute;
-  text-align: center;
-  color: #fff;
-  width: 100%;
-  height: 87vh;
-}
-section.hero article h1 {
-  color: #fff;
-}
-section.hero article h1 span {
-  display: block;
-}
-@media screen and (min-width:768px) and (max-width:1140px) {
-  section.hero div#crossfade figure {
-    background-attachment: scroll;
-    background-size: 200% auto;
-    background-position: center top;
-  }
-  section.hero article {
-    height: auto;
-  }
-  section.hero article div.center {
-    margin-top: 220px;
-  }
-  section.hero article div.center h1 {
-    font-size: 22px;
-  }
-}
-@media screen and (max-width:767px) {
-  section.hero div#crossfade figure {
-    background-attachment: scroll;
-    background-size: 350% auto;
-    background-position: center top;
-  }
-  section.hero article {
-    height: auto;
-  }
-  section.hero article div.center {
-    margin-top: 220px;
-  }
-  section.hero article div.center h1 {
-    font-size: 22px;
-  }
-}
-section.cd-fixed-bg {
-  min-height: 100vh;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-section.cd-scrolling-bg {
-  min-height: 100vh;
+  padding-top: 70px;
 }
 .button {
   display: inline-block;
@@ -524,6 +430,87 @@ header nav.mobile {
     opacity: 1;
   }
 }
+section.hero {
+  width: 100%;
+  position: relative;
+  padding-top: 20px;
+  height: 100vh;
+  min-height: 650px;
+  margin: 0;
+  padding: 0;
+}
+section.hero div#crossfade {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  background-color: #191919;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+section.hero div#crossfade figure {
+  position: absolute;
+  width: 100%;
+  background-image: url("../images/photo-booth.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  min-height: 650px;
+  margin: 0;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+section.hero div#crossfade figure.active {
+  z-index: 3;
+}
+section.hero article {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  height: 87vh;
+}
+section.hero article h1 {
+  color: #fff;
+}
+section.hero article h1 span {
+  display: block;
+}
+@media screen and (min-width:768px) and (max-width:1140px) {
+  section.hero div#crossfade figure {
+    background-attachment: scroll;
+    background-size: 200% auto;
+    background-position: center top;
+  }
+  section.hero article {
+    height: auto;
+  }
+  section.hero article div.center {
+    margin-top: 220px;
+  }
+  section.hero article div.center h1 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width:767px) {
+  section.hero div#crossfade figure {
+    background-attachment: scroll;
+    background-size: 350% auto;
+    background-position: center top;
+  }
+  section.hero article {
+    height: auto;
+  }
+  section.hero article div.center {
+    margin-top: 220px;
+  }
+  section.hero article div.center h1 {
+    font-size: 22px;
+  }
+}
 section.nashville {
   padding: 70px 0;
   background-color: #313131;
@@ -750,11 +737,7 @@ section.bridesmaids div.center article.party {
 }
 section.bridesmaids div.center article.party h2 {
   color: #313131;
-}
-section.bridesmaids div.center article.party hr {
-  margin-top: 3.2%;
-  color: rgba(0,0,0,0.2);
-  width: 20%;
+  margin-top: 0;
 }
 section.bridesmaids div.center article.party ul {
   padding: 0;
@@ -783,7 +766,6 @@ section.bridesmaids div.center article.party ul li a.active {
   opacity: 1;
 }
 section.bridesmaids div.center div#bridesmaids-container {
-  min-height: 400px;
   text-align: center;
 }
 section.bridesmaids div.center div#bridesmaids-container article {
@@ -809,7 +791,6 @@ section.bridesmaids div.center div#bridesmaids-container article div.copy {
 }
 section.groomsmen {
   padding: 10px 0 50px;
-  width: 100%;
   background-color: #ebebeb;
 }
 section.groomsmen div.center article.party {
@@ -817,11 +798,7 @@ section.groomsmen div.center article.party {
 }
 section.groomsmen div.center article.party h2 {
   color: #313131;
-  margin-bottom: 0;
-}
-section.groomsmen div.center article.party hr {
-  color: rgba(0,0,0,0.2);
-  width: 20%;
+  margin-top: 0;
 }
 section.groomsmen div.center article.party ul {
   padding: 0;
@@ -850,7 +827,6 @@ section.groomsmen div.center article.party ul li a.active {
   opacity: 1;
 }
 section.groomsmen div.center div#groomsmen-container {
-  min-height: 400px;
   text-align: center;
 }
 section.groomsmen div.center div#groomsmen-container article {
