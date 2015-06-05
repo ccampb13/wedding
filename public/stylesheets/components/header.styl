@@ -49,14 +49,12 @@ header
     display: none
 
 
-@media screen and (min-width: 768px) and (max-width: 990px)
-  header div ul.nav-bar li
-    margin: 0px 20px
+  @media screen and (min-width: 768px) and (max-width: 990px)
+    div ul.nav-bar li
+      margin: 0px 20px
 
 
-@media screen and (max-width: 767px)
-
-  header
+  @media screen and (max-width: 767px)
     min-height: 0
 
     div ul.nav-bar
@@ -118,7 +116,7 @@ header
               z-index: 1000
 
       div.navigation-panel
-        background-color: rgba($black, .85)
+        background-color: rgba($white, .9)
         display: block
         overflow: hidden
         height: 0px
@@ -150,9 +148,9 @@ header
 
               a
                 text-decoration: none
-                color: $white
+                color: $grey-darker
                 opacity: .7
-                border-bottom: 1px solid $white
+                border-bottom: 1px solid $grey-darker
                 font-size: 20px
 
                 &:hover
@@ -164,7 +162,7 @@ header
 
           a
             text-decoration: none
-            color: $white
+            color: $grey-darker
             opacity: .7
             padding: 0 0 0 10px
             margin-bottom: 10px
