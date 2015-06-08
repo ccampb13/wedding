@@ -54,9 +54,9 @@ section.travel
           color: $grey-darker
           border: 1px solid $grey-darker
 
-        p.other
-          text-align: left
-          max-width 90%
+      p.other
+        text-align: left
+        max-width 100%
 
 section.lodging
   background-color: $grey-darker
@@ -81,6 +81,8 @@ section.lodging
 
     div.options
       ul
+        padding-left 0
+
         li
           list-style-type: none
           display: inline-block
@@ -90,9 +92,8 @@ section.lodging
           padding 3%
           border-radius 3px
 
-          h6
+          p.hotel
             display inline-block
-            letter-spacing .1em
             margin 2px
 
             a
@@ -100,11 +101,12 @@ section.lodging
               color $grey-darker
 
           p
-            color $black
+            color $grey-lighter
             margin 2px
 
     div.other-recs
       ul
+        padding-left 0
         li
           list-style-type: none
           display: inline-block
@@ -131,36 +133,37 @@ section.lodging
   @media screen and (max-width: 767px)
     padding 30px 0
 
-    div.copy
-      h2
-        font-size 18px
+    div.center
+      div.copy
+        h2
+          font-size 18px
 
-      p
-        text-align left
-        max-width 90%
+        p
+          text-align left
+          max-width 100%
 
-    div.options
-      margin 5px auto
+      div.options
+        ul
+          li
+            width 90%
 
-      ul
+            h6
+              font-size 16px
+              line-height 1em
+
+      div.other-recs
+        p
+          text-align center
+          color $white
+        ul
+          li
+            width 90%
+
+      div.airbnb
+        margin 0
         padding 0
-
-        li
-          width 90%
-
-          h6
-            font-size 16px
-            line-height 1em
-
-    div.other-recs
-      p
-        text-align center
-      ul
-        padding 0
-        li
-          display block
-
-    div.airbnb
-      p
-        max-width 90%
-        text-align left
+        p
+          max-width 100%
+          text-align left
+          margin 0
+          padding 0

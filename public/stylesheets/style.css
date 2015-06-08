@@ -947,9 +947,9 @@ section.travel div.center p.other a {
     color: #313131;
     border: 1px solid #313131;
   }
-  section.travel div.center article p.other {
+  section.travel div.center p.other {
     text-align: left;
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 section.lodging {
@@ -971,6 +971,9 @@ section.lodging div.center div.copy p {
   max-width: 80%;
   margin: 0 auto;
 }
+section.lodging div.center div.options ul {
+  padding-left: 0;
+}
 section.lodging div.center div.options ul li {
   list-style-type: none;
   display: inline-block;
@@ -980,18 +983,20 @@ section.lodging div.center div.options ul li {
   padding: 3%;
   border-radius: 3px;
 }
-section.lodging div.center div.options ul li h6 {
+section.lodging div.center div.options ul li p.hotel {
   display: inline-block;
-  letter-spacing: 0.1em;
   margin: 2px;
 }
-section.lodging div.center div.options ul li h6 a {
+section.lodging div.center div.options ul li p.hotel a {
   text-decoration: none;
   color: #313131;
 }
 section.lodging div.center div.options ul li p {
-  color: #000;
+  color: #8f8f8f;
   margin: 2px;
+}
+section.lodging div.center div.other-recs ul {
+  padding-left: 0;
 }
 section.lodging div.center div.other-recs ul li {
   list-style-type: none;
@@ -1019,38 +1024,36 @@ section.lodging div.center div.airbnb p {
   section.lodging {
     padding: 30px 0;
   }
-  section.lodging div.copy h2 {
+  section.lodging div.center div.copy h2 {
     font-size: 18px;
   }
-  section.lodging div.copy p {
+  section.lodging div.center div.copy p {
     text-align: left;
-    max-width: 90%;
+    max-width: 100%;
   }
-  section.lodging div.options {
-    margin: 5px auto;
-  }
-  section.lodging div.options ul {
-    padding: 0;
-  }
-  section.lodging div.options ul li {
+  section.lodging div.center div.options ul li {
     width: 90%;
   }
-  section.lodging div.options ul li h6 {
+  section.lodging div.center div.options ul li h6 {
     font-size: 16px;
     line-height: 1em;
   }
-  section.lodging div.other-recs p {
+  section.lodging div.center div.other-recs p {
     text-align: center;
+    color: #fff;
   }
-  section.lodging div.other-recs ul {
+  section.lodging div.center div.other-recs ul li {
+    width: 90%;
+  }
+  section.lodging div.center div.airbnb {
+    margin: 0;
     padding: 0;
   }
-  section.lodging div.other-recs ul li {
-    display: block;
-  }
-  section.lodging div.airbnb p {
-    max-width: 90%;
+  section.lodging div.center div.airbnb p {
+    max-width: 100%;
     text-align: left;
+    margin: 0;
+    padding: 0;
   }
 }
 .icon.animated.over-scale {
